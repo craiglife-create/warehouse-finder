@@ -1228,6 +1228,9 @@ nav a:hover{color:var(--white);background:var(--arch-dim)}
 }
 .w-input:focus{outline:none;border-color:var(--gold)}
 .w-input::placeholder{color:rgba(155,165,180,0.5)}
+.w-input.w-error{border-color:#F87171;background:rgba(248,113,113,0.06)}
+.w-error-msg{font-size:10px;color:#F87171;margin-top:5px;letter-spacing:0.05em;display:none}
+.w-error-msg.visible{display:block}
 
 .w-nav{display:flex;align-items:center;gap:10px}
 .w-next{
@@ -2576,29 +2579,34 @@ footer{
               <div class="w-step-q">Where should we deliver your off-market site audit?</div>
               <div class="w-fields">
                 <div>
-                  <label class="w-label">Full Name</label>
+                  <label class="w-label">Full Name <span style="color:#F87171">*</span></label>
                   <input class="w-input" id="w-name" type="text" placeholder="Your name"/>
+                  <div class="w-error-msg" id="err-w-name">Please enter your full name</div>
                 </div>
                 <div>
-                  <label class="w-label">Company / Organisation</label>
+                  <label class="w-label">Company / Organisation <span style="color:#F87171">*</span></label>
                   <input class="w-input" id="w-company" type="text" placeholder="Company name"/>
+                  <div class="w-error-msg" id="err-w-company">Please enter your company name</div>
                 </div>
                 <div>
-                  <label class="w-label">Direct Phone</label>
+                  <label class="w-label">Direct Phone <span style="color:#F87171">*</span></label>
                   <input class="w-input" id="w-phone" type="tel" placeholder="+27 ..."/>
+                  <div class="w-error-msg" id="err-w-phone">Please enter a contact number</div>
                 </div>
                 <div>
-                  <label class="w-label">Business Email</label>
+                  <label class="w-label">Business Email <span style="color:#F87171">*</span></label>
                   <input class="w-input" id="w-email" type="email" placeholder="you@company.co.za"/>
+                  <div class="w-error-msg" id="err-w-email">Please enter a valid email address</div>
                 </div>
                 <div class="w-field-full">
-                  <label class="w-label">Timeline &amp; Any Additional Requirements</label>
+                  <label class="w-label">Timeline &amp; Any Additional Requirements <span style="color:#F87171">*</span></label>
                   <input class="w-input" id="w-timeline" type="text" placeholder="e.g. Operational within 60 days, lease term preference..."/>
+                  <div class="w-error-msg" id="err-w-timeline">Please enter your timeline or requirements</div>
                 </div>
               </div>
               <div class="w-nav">
                 <button class="w-back" onclick="prevWStep(5)">← Back</button>
-                <button class="w-next" onclick="this.disabled=true;this.textContent='Sending…';submitWizard().finally(()=>{this.disabled=false;this.textContent='Submit Brief'})" style="background:var(--gold)">
+                <button class="w-next" id="wizard-submit-btn" onclick="handleWizardSubmit(this)" style="background:var(--gold)">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                   Submit Site Audit Brief
                 </button>
@@ -2814,13 +2822,23 @@ function selectWOpt(btn){
   btn.classList.add('selected');
 }
 function collectWizardSelections(){
-  const selections = [];
-  document.querySelectorAll('.w-opt.selected').forEach(el => {
-    selections.push(el.textContent.trim());
-  });
+  // Returns each step's selection as separate named fields
+  const stepMap = {
+    'ws-1': 'sector',
+    'ws-2': 'technical_spec',
+    'ws-3': 'location',
+    'ws-4': 'technical_requirements'
+  };
+  const result = {};
+  for(const [stepId, key] of Object.entries(stepMap)){
+    const step = document.getElementById(stepId);
+    if(!step) continue;
+    const selected = step.querySelectorAll('.w-opt.selected');
+    result[key] = selected.length ? Array.from(selected).map(el=>el.textContent.trim()).join(', ') : '(not selected)';
+  }
   const size = document.getElementById('ws-size');
-  if(size && size.value) selections.push('GLA: ' + size.value);
-  return selections.join(' | ');
+  result['gla'] = (size && size.value) ? size.value : '(not selected)';
+  return result;
 }
 
 // ─── MAKE.COM WEBHOOK ───
@@ -2841,24 +2859,70 @@ async function postToMake(payload) {
   }
 }
 
+function validateWizardContact(){
+  const fields = [
+    { id: 'w-name',     errId: 'err-w-name',     check: v => v.length > 0 },
+    { id: 'w-company',  errId: 'err-w-company',  check: v => v.length > 0 },
+    { id: 'w-phone',    errId: 'err-w-phone',    check: v => v.length > 6 },
+    { id: 'w-email',    errId: 'err-w-email',    check: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) },
+    { id: 'w-timeline', errId: 'err-w-timeline', check: v => v.length > 0 }
+  ];
+  let valid = true;
+  fields.forEach(({ id, errId, check }) => {
+    const input = document.getElementById(id);
+    const err   = document.getElementById(errId);
+    const val   = input.value.trim();
+    if(!check(val)){
+      input.classList.add('w-error');
+      err.classList.add('visible');
+      valid = false;
+    } else {
+      input.classList.remove('w-error');
+      err.classList.remove('visible');
+    }
+    // Clear error on input
+    input.addEventListener('input', () => {
+      if(check(input.value.trim())){
+        input.classList.remove('w-error');
+        err.classList.remove('visible');
+      }
+    }, { once: true });
+  });
+  return valid;
+}
+
+function handleWizardSubmit(btn){
+  if(!validateWizardContact()) return;
+  btn.disabled = true;
+  btn.innerHTML = 'Sending…';
+  submitWizard().finally(()=>{
+    btn.disabled = false;
+    btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Submit Site Audit Brief';
+  });
+}
+
 async function submitWizard(){
-  const name     = document.getElementById('w-name').value.trim()     || '(not provided)';
-  const company  = document.getElementById('w-company').value.trim()  || '(not provided)';
-  const phone    = document.getElementById('w-phone').value.trim()    || '(not provided)';
-  const email    = document.getElementById('w-email').value.trim()    || '(not provided)';
-  const timeline = document.getElementById('w-timeline').value.trim() || '(not provided)';
-  const params   = collectWizardSelections() || '(not provided)';
+  const name     = document.getElementById('w-name').value.trim();
+  const company  = document.getElementById('w-company').value.trim();
+  const phone    = document.getElementById('w-phone').value.trim();
+  const email    = document.getElementById('w-email').value.trim();
+  const timeline = document.getElementById('w-timeline').value.trim();
+  const params   = collectWizardSelections();
 
   await postToMake({
-    form_type:  'Site Selection Wizard',
+    form_type:   'Site Selection Wizard',
     name,
     company,
     phone,
     email,
     timeline,
-    parameter_selections: params,
-    submitted_at: new Date().toISOString(),
-    source: 'warehousefinder.co.za'
+    sector:               params.sector,
+    gla:                  params.gla,
+    power:                params.technical_spec,
+    location:             params.location,
+    technical_requirements: params.technical_requirements,
+    submitted_at:         new Date().toISOString(),
+    source:               'warehousefinder.co.za'
   });
 
   document.getElementById('ws-5').classList.remove('active');
