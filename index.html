@@ -2598,7 +2598,7 @@ footer{
               </div>
               <div class="w-nav">
                 <button class="w-back" onclick="prevWStep(5)">← Back</button>
-                <button class="w-next" onclick="submitWizard()" style="background:var(--gold)">
+                <button class="w-next" onclick="this.disabled=true;this.textContent='Sending…';submitWizard().finally(()=>{this.disabled=false;this.textContent='Submit Brief'})" style="background:var(--gold)">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                   Submit Site Audit Brief
                 </button>
@@ -2725,7 +2725,7 @@ footer{
         <input class="w-input" id="m-email" type="email" placeholder="Business Email"/>
         <input class="w-input" id="m-brief" type="text" placeholder="Brief description of your requirement"/>
       </div>
-      <button onclick="submitModal()" class="w-next" style="width:100%">
+      <button onclick="this.disabled=true;this.textContent='Sending…';submitModal().finally(()=>{this.disabled=false;this.textContent='Submit Quick Brief'})" class="w-next" style="width:100%">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
         Submit Quick Brief
       </button>
@@ -2823,7 +2823,24 @@ function collectWizardSelections(){
   return selections.join(' | ');
 }
 
-function submitWizard(){
+// ─── MAKE.COM WEBHOOK ───
+// IMPORTANT: Replace the URL below with your actual Make.com webhook URL
+const MAKE_WEBHOOK_URL = 'https://hook.eu2.make.com/sr37oo20crj0onqxi9wmb7bdvc114suj';
+
+async function postToMake(payload) {
+  try {
+    await fetch(MAKE_WEBHOOK_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+  } catch (err) {
+    console.error('Webhook error:', err);
+  }
+}
+
+async function submitWizard(){
   const name     = document.getElementById('w-name').value.trim()     || '(not provided)';
   const company  = document.getElementById('w-company').value.trim()  || '(not provided)';
   const phone    = document.getElementById('w-phone').value.trim()    || '(not provided)';
@@ -2831,47 +2848,40 @@ function submitWizard(){
   const timeline = document.getElementById('w-timeline').value.trim() || '(not provided)';
   const params   = collectWizardSelections() || '(not provided)';
 
-  const subject = encodeURIComponent('Site Selection Brief — ' + company);
-  const body = encodeURIComponent(
-    'WAREHOUSE FINDER — STRATEGIC SITE SELECTION BRIEF\n' +
-    '═══════════════════════════════════════════\n\n' +
-    'Name:        ' + name + '\n' +
-    'Company:     ' + company + '\n' +
-    'Phone:       ' + phone + '\n' +
-    'Email:       ' + email + '\n' +
-    'Timeline:    ' + timeline + '\n\n' +
-    'Parameter Selections:\n' + params + '\n\n' +
-    '═══════════════════════════════════════════\n' +
-    'Submitted via warehousefinder.co.za'
-  );
-
-  window.location.href = 'mailto:info@warehousefinder.co.za?subject=' + subject + '&body=' + body;
+  await postToMake({
+    form_type:  'Site Selection Wizard',
+    name,
+    company,
+    phone,
+    email,
+    timeline,
+    parameter_selections: params,
+    submitted_at: new Date().toISOString(),
+    source: 'warehousefinder.co.za'
+  });
 
   document.getElementById('ws-5').classList.remove('active');
   document.getElementById('w-success').classList.add('active');
 }
 
-function submitModal(){
+async function submitModal(){
   const name    = document.getElementById('m-name').value.trim()    || '(not provided)';
   const company = document.getElementById('m-company').value.trim() || '(not provided)';
   const phone   = document.getElementById('m-phone').value.trim()   || '(not provided)';
   const email   = document.getElementById('m-email').value.trim()   || '(not provided)';
   const brief   = document.getElementById('m-brief').value.trim()   || '(not provided)';
 
-  const subject = encodeURIComponent('Quick Brief — ' + company);
-  const body = encodeURIComponent(
-    'WAREHOUSE FINDER — QUICK BRIEF\n' +
-    '═══════════════════════════════════════════\n\n' +
-    'Name:        ' + name + '\n' +
-    'Company:     ' + company + '\n' +
-    'Phone:       ' + phone + '\n' +
-    'Email:       ' + email + '\n' +
-    'Requirement: ' + brief + '\n\n' +
-    '═══════════════════════════════════════════\n' +
-    'Submitted via warehousefinder.co.za'
-  );
+  await postToMake({
+    form_type:   'Quick Brief',
+    name,
+    company,
+    phone,
+    email,
+    requirement: brief,
+    submitted_at: new Date().toISOString(),
+    source: 'warehousefinder.co.za'
+  });
 
-  window.location.href = 'mailto:info@warehousefinder.co.za?subject=' + subject + '&body=' + body;
   closeAudit();
 }
 
