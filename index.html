@@ -1,0 +1,2918 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Industrial Property Brokers South Africa | Off-Market Warehouses | Warehouse Finder</title>
+<meta name="description" content="South Africa's premier off-market industrial property concierge. We secure elite warehouses, factories, and logistics hubs in Johannesburg, Cape Town, and Durban."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":["RealEstateAgent","LocalBusiness"],"@id":"https://www.warehousefinder.co.za/#organization","name":"Warehouse Finder","url":"https://www.warehousefinder.co.za","telephone":"+27600457443","priceRange":"$$$$","areaServed":"South Africa","address":[{"@type":"PostalAddress","addressLocality":"Johannesburg","addressRegion":"Gauteng","addressCountry":"ZA"},{"@type":"PostalAddress","addressLocality":"Pretoria","addressRegion":"Gauteng","addressCountry":"ZA"},{"@type":"PostalAddress","addressLocality":"Cape Town","addressRegion":"Western Cape","addressCountry":"ZA"},{"@type":"PostalAddress","addressLocality":"Durban","addressRegion":"KwaZulu-Natal","addressCountry":"ZA"}]},{"@type":"Service","name":"Off-Market Commercial Property Leasing","provider":{"@id":"https://www.warehousefinder.co.za/#organization"},"areaServed":"South Africa","serviceType":"Industrial Property Brokerage"}]}
+</script>
+<style>
+/* ══════════════════════════════════════════════
+   MIDNIGHT OPULENCE — DESIGN SYSTEM 2026
+   ══════════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root {
+  /* ─ Midnight Opulence Palette ─ */
+  --midnight:    #0D1B2A;
+  --midnight-80: rgba(13,27,42,0.80);
+  --midnight-95: rgba(13,27,42,0.95);
+  --carbon:      #111827;
+  --chamber:     #162032;   /* cards & raised surfaces */
+  --vault:       #1C2B3A;   /* hover state */
+
+  --gold:        #C9A84C;   /* brushed gold — primary accent */
+  --gold-light:  #DFC07A;
+  --gold-dim:    rgba(201,168,76,0.12);
+  --gold-border: rgba(201,168,76,0.25);
+
+  --arch-gray:   #E0E1DD;   /* architectural gray — secondary text */
+  --arch-mid:    #9BA5B4;
+  --arch-dim:    rgba(224,225,221,0.08);
+  --arch-line:   rgba(224,225,221,0.10);
+
+  --white:       #FFFFFF;
+  --off-white:   #F5F4F0;   /* warm off-white sections */
+
+  /* ─ Typography ─ */
+  --serif:  'Playfair Display', 'Georgia', serif;
+  --sans:   'DM Sans', system-ui, sans-serif;
+
+  /* ─ Spacing ─ */
+  --r: 3px;  /* border-radius base */
+}
+
+html { scroll-behavior:smooth; }
+
+body {
+  font-family: var(--sans);
+  background: var(--midnight);
+  color: var(--arch-gray);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  cursor: default;
+}
+
+/* ─── Custom Scrollbar ─── */
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--midnight)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px}
+
+::selection{background:var(--gold);color:var(--midnight)}
+
+/* ─── Animations ─── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+@keyframes slideRight{from{opacity:0;transform:translateX(-20px)}to{opacity:1;transform:translateX(0)}}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes pulse-ring{0%{transform:scale(1);opacity:0.6}100%{transform:scale(2.2);opacity:0}}
+@keyframes scanline{0%{top:-100%}100%{top:100%}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes formSlide{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:translateX(0)}}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity 0.75s ease,transform 0.75s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.delay-1{transition-delay:0.1s}.delay-2{transition-delay:0.2s}
+.delay-3{transition-delay:0.3s}.delay-4{transition-delay:0.4s}
+.delay-5{transition-delay:0.5s}
+
+/* ─── Layout ─── */
+.container{max-width:1320px;margin:0 auto;padding:0 52px}
+.section-pad{padding:120px 0}
+
+/* ─── Global Type Scale ─── */
+.eyebrow {
+  font-family:var(--sans);
+  font-size:10px;font-weight:600;
+  letter-spacing:0.22em;text-transform:uppercase;
+  color:var(--gold);
+  display:flex;align-items:center;gap:10px;
+  margin-bottom:18px;
+}
+.eyebrow::before{content:'';width:28px;height:1px;background:var(--gold);flex-shrink:0}
+
+h1,h2{font-family:var(--serif);line-height:1.05;letter-spacing:-0.02em}
+h3,h4{font-family:var(--sans)}
+
+/* ─── BUTTONS ─── */
+.btn-gold {
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--gold);color:var(--midnight);
+  font-family:var(--sans);font-size:11px;font-weight:700;
+  letter-spacing:0.14em;text-transform:uppercase;
+  padding:15px 30px;border:none;border-radius:var(--r);
+  cursor:pointer;text-decoration:none;
+  transition:background 0.25s ease,transform 0.2s ease,box-shadow 0.25s ease;
+  position:relative;overflow:hidden;
+}
+.btn-gold::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(255,255,255,0.15),transparent);
+  opacity:0;transition:opacity 0.25s ease;
+}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 12px 36px rgba(201,168,76,0.35)}
+.btn-gold:hover::after{opacity:1}
+.btn-ghost {
+  display:inline-flex;align-items:center;gap:10px;
+  background:transparent;color:var(--arch-gray);
+  font-family:var(--sans);font-size:11px;font-weight:600;
+  letter-spacing:0.14em;text-transform:uppercase;
+  padding:14px 28px;
+  border:1px solid var(--arch-line);
+  border-radius:var(--r);
+  cursor:pointer;text-decoration:none;
+  transition:all 0.25s ease;
+}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold);background:var(--gold-dim)}
+.btn-wa {
+  display:inline-flex;align-items:center;gap:10px;
+  background:rgba(37,211,102,0.08);color:#25D366;
+  font-family:var(--sans);font-size:11px;font-weight:700;
+  letter-spacing:0.12em;text-transform:uppercase;
+  padding:14px 28px;
+  border:1px solid rgba(37,211,102,0.25);
+  border-radius:var(--r);
+  cursor:pointer;text-decoration:none;
+  transition:all 0.25s ease;
+}
+.btn-wa:hover{background:rgba(37,211,102,0.14);box-shadow:0 8px 24px rgba(37,211,102,0.15)}
+
+/* ══════════════════════════════════════════════
+   HEADER
+   ══════════════════════════════════════════════ */
+#hdr {
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:24px 52px;
+  background:transparent;
+  border-bottom:1px solid transparent;
+  transition:all 0.4s ease;
+}
+#hdr.scrolled{
+  padding:14px 52px;
+  background:var(--midnight-95);
+  border-bottom-color:var(--arch-line);
+  backdrop-filter:blur(16px);
+}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-emblem{
+  width:38px;height:38px;
+  background:linear-gradient(135deg,var(--gold) 0%,var(--gold-light) 100%);
+  clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.logo-emblem svg{width:18px;height:18px;stroke:var(--midnight);stroke-width:2.5}
+.logo-copy{display:flex;flex-direction:column;gap:2px}
+.logo-name{font-family:var(--sans);font-size:14px;font-weight:700;color:var(--white);letter-spacing:0.08em;text-transform:uppercase}
+.logo-tag{font-size:8.5px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold)}
+
+nav{display:flex;align-items:center;gap:2px}
+nav a{
+  font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--arch-mid);text-decoration:none;
+  padding:8px 16px;border-radius:var(--r);
+  transition:color 0.2s ease,background 0.2s ease;
+}
+nav a:hover{color:var(--white);background:var(--arch-dim)}
+
+.hdr-right{display:flex;align-items:center;gap:12px}
+.hdr-phone{
+  display:flex;align-items:center;gap:7px;
+  font-size:12px;font-weight:600;letter-spacing:0.04em;
+  color:var(--arch-gray);text-decoration:none;
+  transition:color 0.2s ease;
+}
+.hdr-phone:hover{color:var(--gold)}
+.hdr-phone svg{width:13px;height:13px}
+
+/* ══════════════════════════════════════════════
+   HERO — TACTILE MAXIMALIST
+   ══════════════════════════════════════════════ */
+#hero{
+  position:relative;
+  min-height:100vh;
+  display:flex;flex-direction:column;
+  justify-content:center;
+  overflow:hidden;
+  background:var(--midnight);
+}
+
+/* Cinematic background */
+.hero-bg{
+  position:absolute;inset:0;
+  background-image:url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=2000&q=85');
+  background-size:cover;background-position:center 40%;
+  filter:grayscale(40%) contrast(1.1);
+  transform:scale(1.05);
+  animation:subtleZoom 20s ease-in-out infinite alternate;
+}
+@keyframes subtleZoom{from{transform:scale(1.05)}to{transform:scale(1.0)}}
+
+/* Depth gradient */
+.hero-veil{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(115deg,rgba(13,27,42,0.97) 0%,rgba(13,27,42,0.88) 42%,rgba(13,27,42,0.52) 70%,rgba(13,27,42,0.65) 100%),
+    linear-gradient(to bottom,rgba(13,27,42,0.3) 0%,transparent 40%,transparent 60%,rgba(13,27,42,0.8) 100%);
+}
+
+/* Technical grid overlay at 18% opacity */
+.hero-grid-overlay{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(201,168,76,0.07) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(201,168,76,0.07) 1px,transparent 1px);
+  background-size:72px 72px;
+  mask-image:radial-gradient(ellipse at 60% 50%,rgba(0,0,0,0.8) 0%,transparent 70%);
+}
+
+/* Scanline effect */
+.hero-scanline{
+  position:absolute;inset:0;overflow:hidden;pointer-events:none;
+  opacity:0.04;
+}
+.hero-scanline::after{
+  content:'';position:absolute;left:0;right:0;height:200px;
+  background:linear-gradient(to bottom,transparent,rgba(201,168,76,0.8),transparent);
+  animation:scanline 8s linear infinite;
+}
+
+/* Coordinate mark — top right corner decoration */
+.hero-coordinate{
+  position:absolute;top:48px;right:52px;
+  font-family:var(--sans);font-size:9px;font-weight:500;
+  letter-spacing:0.18em;text-transform:uppercase;
+  color:rgba(201,168,76,0.4);
+  display:flex;flex-direction:column;align-items:flex-end;gap:4px;
+  z-index:2;
+}
+.hero-coordinate span{display:flex;align-items:center;gap:6px}
+.hero-coordinate span::before{
+  content:'';width:20px;height:1px;background:rgba(201,168,76,0.3);
+}
+
+.hero-content{
+  position:relative;z-index:2;
+  max-width:1320px;margin:0 auto;
+  padding:160px 52px 80px;
+  width:100%;
+}
+
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:12px;
+  font-family:var(--sans);font-size:9px;font-weight:600;
+  letter-spacing:0.28em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:32px;
+  animation:slideRight 1s ease 0.2s both;
+}
+.hero-eyebrow .dot{
+  width:5px;height:5px;background:var(--gold);
+  border-radius:50%;animation:blink 2s ease infinite;
+}
+
+.hero-h1{
+  font-family:var(--serif);
+  font-size:clamp(58px,8.5vw,118px);
+  line-height:0.93;
+  color:var(--white);
+  letter-spacing:-0.03em;
+  margin-bottom:0;
+  animation:fadeUp 1s ease 0.35s both;
+}
+.hero-h1 em{font-style:italic;color:var(--gold)}
+.hero-h1 .line2{
+  display:block;
+  font-size:clamp(20px,1.8vw,26px);
+  font-family:var(--sans);
+  font-weight:500;
+  font-style:normal;
+  text-transform:uppercase;
+  letter-spacing:0.18em;
+  color:#E0E1DD;
+  padding-left:2px;
+  margin-top:clamp(20px,2.8vw,36px);
+  line-height:1;
+}
+
+.hero-sub{
+  font-size:clamp(15px,1.6vw,18px);
+  line-height:1.75;
+  color:var(--arch-mid);
+  max-width:520px;
+  margin:32px 0 48px;
+  font-weight:300;
+  animation:fadeUp 1s ease 0.55s both;
+}
+.hero-sub strong{color:var(--arch-gray);font-weight:500}
+
+.hero-ctas{
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  animation:fadeUp 1s ease 0.7s both;
+  margin-bottom:72px;
+}
+
+/* Right-side data panel */
+.hero-data-panel{
+  position:absolute;
+  right:52px;bottom:80px;
+  width:280px;
+  border:1px solid var(--arch-line);
+  border-radius:var(--r);
+  background:rgba(13,27,42,0.85);
+  backdrop-filter:blur(12px);
+  padding:24px;
+  animation:fadeUp 1s ease 0.9s both;
+}
+.data-panel-label{
+  font-size:8px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:16px;
+  display:flex;align-items:center;gap:8px;
+}
+.data-panel-label::after{
+  content:'LIVE';
+  background:rgba(201,168,76,0.12);
+  border:1px solid var(--gold-border);
+  color:var(--gold);
+  font-size:7px;letter-spacing:0.15em;
+  padding:2px 6px;border-radius:1px;
+  animation:blink 2s ease infinite;
+}
+.data-row{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:10px 0;
+  border-bottom:1px solid var(--arch-line);
+}
+.data-row:last-child{border-bottom:none}
+.data-node{font-size:11px;font-weight:500;color:var(--arch-mid)}
+.data-rate{
+  font-size:13px;font-weight:700;color:var(--white);
+  font-variant-numeric:tabular-nums;
+}
+.data-rate span{font-size:9px;font-weight:400;color:var(--gold)}
+
+.hero-trust{
+  display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+  padding-top:24px;
+  border-top:1px solid var(--arch-line);
+  animation:fadeUp 1s ease 0.85s both;
+}
+.trust-item{
+  display:flex;align-items:center;gap:8px;
+  font-size:11px;font-weight:500;
+  color:rgba(224,225,221,0.5);
+}
+.trust-item::before{
+  content:'';width:5px;height:5px;
+  background:var(--gold);opacity:0.6;
+  border-radius:50%;flex-shrink:0;
+}
+
+/* ══════════════════════════════════════════════
+   TRUST STRIP
+   ══════════════════════════════════════════════ */
+#trust-strip{
+  background:var(--chamber);
+  border-top:1px solid var(--arch-line);
+  border-bottom:1px solid var(--arch-line);
+}
+.trust-strip-inner{
+  display:grid;grid-template-columns:auto 1fr auto;
+  gap:0;
+  align-items:stretch;
+}
+.ts-credentials{
+  display:flex;align-items:center;gap:0;
+  border-right:1px solid var(--arch-line);
+}
+.ts-badge{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:20px 28px;
+  border-right:1px solid var(--arch-line);
+  gap:5px;
+  transition:background 0.2s ease;
+}
+.ts-badge:hover{background:var(--arch-dim)}
+.ts-badge-name{
+  font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;
+  color:var(--gold);
+}
+.ts-badge-sub{font-size:9px;color:var(--arch-mid);letter-spacing:0.08em}
+.ts-badge-icon{
+  width:28px;height:28px;
+  border:1px solid var(--gold-border);
+  border-radius:2px;
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:2px;
+}
+.ts-badge-icon svg{width:14px;height:14px;stroke:var(--gold);stroke-width:1.5}
+
+/* Market Ticker */
+.ts-ticker-wrap{
+  overflow:hidden;
+  position:relative;
+  display:flex;align-items:center;
+}
+.ts-ticker-label{
+  flex-shrink:0;
+  padding:0 20px;
+  font-size:9px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;
+  color:var(--gold);
+  background:var(--gold-dim);
+  border-right:1px solid var(--gold-border);
+  height:100%;display:flex;align-items:center;
+  white-space:nowrap;
+}
+.ticker-track{
+  display:flex;
+  animation:ticker 30s linear infinite;
+  white-space:nowrap;
+}
+.ticker-item{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:0 28px;
+  font-size:11px;font-weight:500;
+  border-right:1px solid var(--arch-line);
+}
+.ticker-node{color:var(--arch-mid)}
+.ticker-rate{color:var(--white);font-weight:600}
+.ticker-change{font-size:10px}
+.ticker-up{color:#4ADE80}
+.ticker-down{color:#F87171}
+.ticker-sep{color:var(--arch-line);font-size:16px}
+
+.ts-cta-zone{
+  display:flex;align-items:center;
+  padding:14px 28px;
+  border-left:1px solid var(--arch-line);
+  gap:10px;
+  flex-shrink:0;
+}
+
+/* ══════════════════════════════════════════════
+   ADVANTAGE SECTION
+   ══════════════════════════════════════════════ */
+#advantage{
+  background:var(--midnight);
+  padding:140px 0;
+  position:relative;
+  overflow:hidden;
+}
+#advantage::before{
+  content:'';position:absolute;
+  top:-200px;right:-200px;
+  width:600px;height:600px;
+  background:radial-gradient(circle,rgba(201,168,76,0.05) 0%,transparent 70%);
+  pointer-events:none;
+}
+.advantage-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:100px;align-items:center;
+}
+.adv-label{
+  writing-mode:vertical-lr;
+  font-size:8px;font-weight:600;letter-spacing:0.3em;text-transform:uppercase;
+  color:rgba(201,168,76,0.3);
+  position:absolute;left:52px;top:50%;transform:translateY(-50%) rotate(180deg);
+}
+.adv-heading{
+  font-family:var(--serif);
+  font-size:clamp(36px,4.5vw,60px);
+  line-height:1.08;
+  color:var(--white);
+  letter-spacing:-0.02em;
+}
+.adv-heading em{font-style:italic;color:var(--gold)}
+.adv-body{
+  font-size:16px;line-height:1.8;
+  color:var(--arch-mid);
+  margin-top:28px;font-weight:300;
+}
+.adv-body strong{color:var(--arch-gray);font-weight:500}
+
+.stat-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:1px;
+  background:var(--arch-line);
+  border:1px solid var(--arch-line);
+  border-radius:var(--r);
+  overflow:hidden;
+  margin-top:20px;
+}
+.stat-cell{
+  background:var(--chamber);
+  padding:32px 28px;
+  position:relative;
+  transition:background 0.3s ease;
+}
+.stat-cell:hover{background:var(--vault)}
+.stat-cell::before{
+  content:'';
+  position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(to right,var(--gold),transparent);
+  transform:scaleX(0);transform-origin:left;
+  transition:transform 0.4s ease;
+}
+.stat-cell:hover::before{transform:scaleX(1)}
+.stat-num{
+  font-family:var(--serif);
+  font-size:clamp(36px,4vw,52px);
+  color:var(--gold);
+  line-height:1;margin-bottom:8px;
+  font-style:italic;
+}
+.stat-label{font-size:12px;color:var(--arch-mid);line-height:1.5;font-weight:400}
+
+.adv-right-text{font-size:16px;line-height:1.8;color:var(--arch-mid);font-weight:300}
+.adv-right-text strong{color:var(--arch-gray);font-weight:500}
+.adv-quote{
+  margin-top:40px;
+  padding:28px 32px;
+  border-left:2px solid var(--gold);
+  background:var(--gold-dim);
+  border-radius:0 var(--r) var(--r) 0;
+}
+.adv-quote p{
+  font-family:var(--serif);font-style:italic;
+  font-size:18px;line-height:1.6;
+  color:var(--arch-gray);
+}
+.adv-quote cite{
+  display:block;margin-top:12px;
+  font-family:var(--sans);font-size:11px;font-weight:600;
+  letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--gold);font-style:normal;
+}
+
+/* ══════════════════════════════════════════════
+   SITE SELECTION STRATEGY — Process
+   ══════════════════════════════════════════════ */
+#process{
+  background:var(--off-white);
+  padding:140px 0;
+}
+.process-header{
+  display:grid;grid-template-columns:1fr auto;
+  align-items:end;gap:40px;
+  margin-bottom:72px;
+}
+.process-h2{
+  font-family:var(--serif);
+  font-size:clamp(36px,4vw,54px);
+  color:var(--midnight);
+  letter-spacing:-0.02em;
+  line-height:1.08;
+}
+.process-h2 em{font-style:italic;color:var(--navy,#0A2463)}
+.process-sub{font-size:15px;color:#6B7280;line-height:1.7;max-width:320px;text-align:right;font-weight:300}
+
+.parameter-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1px;
+  background:#D1D5DB;
+  border:1px solid #D1D5DB;
+  border-radius:var(--r);
+  overflow:hidden;
+  margin-bottom:40px;
+}
+.param-card{
+  background:var(--white);
+  padding:40px 32px 36px;
+  cursor:pointer;
+  position:relative;
+  transition:background 0.3s ease;
+  overflow:hidden;
+}
+.param-card::after{
+  content:'';position:absolute;
+  bottom:0;left:0;right:0;height:3px;
+  background:var(--midnight);
+  transform:scaleX(0);transform-origin:left;
+  transition:transform 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.param-card:hover::after,.param-card.active::after{transform:scaleX(1)}
+.param-card:hover,.param-card.active{background:#F9FAFB}
+.param-card.active{background:#EEF2FF}
+.param-card.active::after{background:var(--midnight)}
+
+/* Custom Technical Icons */
+.param-icon{
+  width:52px;height:52px;
+  margin-bottom:24px;
+  position:relative;
+}
+.param-icon svg{
+  width:100%;height:100%;
+  stroke:var(--midnight);stroke-width:1.2;
+  fill:none;stroke-linecap:round;stroke-linejoin:round;
+  transition:stroke 0.3s ease;
+}
+.param-card:hover .param-icon svg,.param-card.active .param-icon svg{stroke:#0A2463}
+.param-title{
+  font-size:14px;font-weight:700;
+  color:var(--midnight);
+  margin-bottom:8px;letter-spacing:0.01em;
+}
+.param-metric{
+  font-family:var(--serif);font-style:italic;
+  font-size:32px;color:#0A2463;
+  line-height:1;margin-bottom:6px;
+}
+.param-unit{
+  font-size:10px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;
+  color:#9CA3AF;margin-bottom:12px;
+}
+.param-body{font-size:12px;line-height:1.6;color:#6B7280}
+.param-number{
+  position:absolute;top:20px;right:24px;
+  font-family:var(--serif);font-size:64px;
+  color:rgba(10,36,99,0.04);line-height:1;
+}
+
+/* Step connector visual */
+.process-flow{
+  display:flex;align-items:center;
+  gap:0;
+  border:1px solid #E5E7EB;
+  border-radius:var(--r);
+  overflow:hidden;
+}
+.flow-step{
+  flex:1;padding:24px 28px;
+  background:var(--white);
+  display:flex;align-items:center;gap:16px;
+  border-right:1px solid #E5E7EB;
+  position:relative;
+  transition:background 0.25s ease;
+}
+.flow-step:last-child{border-right:none}
+.flow-step:hover{background:#F9FAFB}
+.flow-step-num{
+  font-family:var(--serif);font-style:italic;
+  font-size:32px;color:#E5E7EB;line-height:1;
+  flex-shrink:0;
+}
+.flow-step-text{}
+.flow-step-title{font-size:13px;font-weight:700;color:var(--midnight);margin-bottom:3px}
+.flow-step-sub{font-size:11px;color:#6B7280}
+.flow-arrow{
+  position:absolute;right:-12px;top:50%;transform:translateY(-50%);
+  width:22px;height:22px;
+  background:var(--midnight);
+  clip-path:polygon(0 50%,50% 0,100% 50%,50% 100%);
+  z-index:2;
+  display:flex;align-items:center;justify-content:center;
+}
+
+/* ══════════════════════════════════════════════
+   SECTOR EXPERTISE
+   ══════════════════════════════════════════════ */
+#sectors{
+  background:var(--midnight);
+  padding:140px 0;
+  position:relative;overflow:hidden;
+}
+#sectors::before{
+  content:'';position:absolute;
+  bottom:-150px;left:-100px;
+  width:500px;height:500px;
+  background:radial-gradient(circle,rgba(201,168,76,0.04) 0%,transparent 70%);
+}
+.sectors-h2{
+  font-family:var(--serif);
+  font-size:clamp(36px,4vw,54px);
+  color:var(--white);
+  letter-spacing:-0.02em;
+  line-height:1.08;
+  margin-bottom:64px;
+}
+.sectors-h2 em{font-style:italic;color:var(--gold)}
+
+.sectors-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:1px;
+  background:var(--arch-line);
+  border:1px solid var(--arch-line);
+  border-radius:var(--r);
+  overflow:hidden;
+}
+.sector-card{
+  background:var(--chamber);
+  padding:52px 48px;
+  position:relative;overflow:hidden;
+  transition:background 0.35s ease;
+  cursor:default;
+}
+.sector-card:hover{background:var(--vault)}
+.sector-card::before{
+  content:'';position:absolute;
+  top:0;left:0;width:3px;bottom:0;
+  background:var(--gold);
+  transform:scaleY(0);transform-origin:top;
+  transition:transform 0.45s cubic-bezier(0.4,0,0.2,1);
+}
+.sector-card:hover::before{transform:scaleY(1)}
+.sector-num{
+  position:absolute;top:28px;right:32px;
+  font-family:var(--serif);font-style:italic;
+  font-size:80px;line-height:1;
+  color:rgba(201,168,76,0.05);
+  pointer-events:none;
+}
+.sector-icon{
+  width:48px;height:48px;margin-bottom:28px;
+  color:var(--arch-mid);transition:color 0.3s ease;
+}
+.sector-card:hover .sector-icon{color:var(--gold)}
+.sector-icon svg{width:100%;height:100%;stroke:currentColor;stroke-width:1.2;fill:none}
+.sector-name{
+  font-family:var(--sans);font-size:20px;font-weight:700;
+  color:var(--white);margin-bottom:6px;letter-spacing:-0.01em;
+}
+.sector-focus{
+  font-size:10px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:16px;
+}
+.sector-body{font-size:14px;line-height:1.75;color:var(--arch-mid)}
+.sector-specs{display:flex;flex-wrap:wrap;gap:7px;margin-top:24px}
+.spec-tag{
+  font-size:10px;font-weight:600;letter-spacing:0.08em;
+  padding:5px 11px;border-radius:1px;
+  border:1px solid var(--arch-line);
+  color:var(--arch-mid);
+  transition:all 0.2s ease;
+}
+.sector-card:hover .spec-tag{border-color:var(--gold-border);color:var(--gold)}
+
+/* ══════════════════════════════════════════════
+   TESTIMONIALS — INSTITUTIONAL
+   ══════════════════════════════════════════════ */
+#testimonials{
+  background:var(--chamber);
+  padding:140px 0;
+  border-top:1px solid var(--arch-line);
+  border-bottom:1px solid var(--arch-line);
+}
+.testi-header{
+  display:grid;grid-template-columns:1fr auto;
+  align-items:end;gap:40px;margin-bottom:72px;
+}
+.testi-h2{
+  font-family:var(--serif);
+  font-size:clamp(36px,4vw,54px);
+  color:var(--white);letter-spacing:-0.02em;line-height:1.08;
+}
+.testi-h2 em{font-style:italic;color:var(--gold)}
+.testi-meta{
+  text-align:right;
+}
+.testi-meta-num{
+  font-family:var(--serif);font-style:italic;
+  font-size:52px;color:rgba(201,168,76,0.2);
+  line-height:1;
+}
+.testi-meta-label{font-size:10px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--arch-mid)}
+
+.testi-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1px;background:var(--arch-line);
+  border:1px solid var(--arch-line);
+  border-radius:var(--r);overflow:hidden;
+}
+.testi-card{
+  background:var(--midnight);
+  padding:44px 40px;
+  display:flex;flex-direction:column;
+  transition:background 0.3s ease;
+}
+.testi-card:hover{background:var(--vault)}
+.testi-result-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--gold-dim);
+  border:1px solid var(--gold-border);
+  border-radius:1px;
+  padding:5px 10px;
+  font-size:9px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:20px;
+  align-self:flex-start;
+}
+.testi-q{
+  font-family:var(--serif);font-size:64px;
+  color:var(--gold);opacity:0.25;
+  line-height:0.7;
+  margin-bottom:12px;
+}
+.testi-text{
+  font-size:15px;line-height:1.8;
+  color:rgba(224,225,221,0.75);
+  font-style:italic;font-weight:300;
+  flex:1;margin-bottom:32px;
+}
+.testi-author{
+  border-top:1px solid var(--arch-line);
+  padding-top:24px;
+  display:flex;justify-content:space-between;align-items:flex-start;
+  gap:16px;
+}
+.testi-person{}
+.testi-name{font-size:13px;font-weight:700;color:var(--white);margin-bottom:3px}
+.testi-role{font-size:11px;color:var(--arch-mid)}
+
+/* Logo placeholder for institutional clients */
+.testi-logo{
+  width:72px;height:36px;
+  background:rgba(255,255,255,0.04);
+  border:1px solid var(--arch-line);
+  border-radius:2px;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+  font-size:9px;font-weight:700;
+  letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--arch-mid);
+  transition:all 0.2s ease;
+}
+.testi-card:hover .testi-logo{border-color:var(--gold-border);color:var(--gold)}
+
+/* ══════════════════════════════════════════════
+   GIS NODE MAP
+   ══════════════════════════════════════════════ */
+#nodes{
+  background:var(--off-white);
+  padding:140px 0;
+}
+.nodes-h2{
+  font-family:var(--serif);
+  font-size:clamp(36px,4vw,54px);
+  color:var(--midnight);letter-spacing:-0.02em;line-height:1.08;
+  margin-bottom:64px;
+}
+.nodes-h2 em{font-style:italic}
+.nodes-layout{
+  display:grid;grid-template-columns:1fr 380px;
+  gap:2px;
+  background:#D1D5DB;
+  border:1px solid #D1D5DB;
+  border-radius:var(--r);
+  overflow:hidden;
+  min-height:560px;
+}
+
+/* GIS Map Canvas */
+.map-canvas{
+  background:var(--midnight);
+  position:relative;overflow:hidden;
+}
+.map-canvas-bg{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(201,168,76,0.06) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(201,168,76,0.06) 1px,transparent 1px);
+  background-size:48px 48px;
+}
+.map-title{
+  position:absolute;top:24px;left:24px;
+  font-size:8px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;
+  color:rgba(201,168,76,0.5);
+}
+.map-subtitle{
+  position:absolute;top:40px;left:24px;
+  font-size:9px;color:rgba(224,225,221,0.3);
+  letter-spacing:0.08em;
+}
+
+/* SA Map Illustration (SVG paths for provinces) */
+.sa-map{
+  position:absolute;
+  top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  width:88%;height:88%;
+  opacity:0.5;
+  object-fit:contain;
+  /* Gold tint applied via filter: white SVG turned gold */
+  filter:brightness(0) saturate(100%) invert(73%) sepia(40%) saturate(600%) hue-rotate(5deg) brightness(95%);
+}
+
+/* Node markers */
+.node-marker{
+  position:absolute;
+  cursor:pointer;
+  z-index:10;
+  transform:translate(-50%,-50%);
+}
+.node-dot{
+  width:14px;height:14px;
+  background:var(--gold);
+  border-radius:50%;
+  border:2px solid var(--midnight);
+  position:relative;
+  transition:transform 0.2s ease;
+  z-index:2;
+}
+.node-marker:hover .node-dot{transform:scale(1.4)}
+.node-marker.active .node-dot{background:var(--white);box-shadow:0 0 0 3px var(--gold)}
+.node-ring{
+  position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  width:32px;height:32px;
+  border:1.5px solid rgba(201,168,76,0.4);
+  border-radius:50%;
+  animation:pulse-ring 2.5s ease-out infinite;
+}
+.node-ring-2{
+  position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  width:32px;height:32px;
+  border:1.5px solid rgba(201,168,76,0.25);
+  border-radius:50%;
+  animation:pulse-ring 2.5s ease-out 0.8s infinite;
+}
+.node-label{
+  position:absolute;left:50%;
+  transform:translateX(-50%);
+  bottom:-20px;
+  font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;
+  color:rgba(224,225,221,0.7);
+  white-space:nowrap;
+}
+.node-marker.active .node-label{color:var(--gold)}
+
+/* Map scale/legend */
+.map-legend{
+  position:absolute;bottom:20px;left:24px;
+  display:flex;align-items:center;gap:16px;
+}
+.legend-item{
+  display:flex;align-items:center;gap:6px;
+  font-size:9px;font-weight:500;letter-spacing:0.1em;
+  color:rgba(224,225,221,0.4);
+}
+.legend-dot{width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.legend-dot.dim{background:rgba(201,168,76,0.3)}
+
+/* Data sidebar */
+.map-sidebar{
+  background:var(--white);
+  overflow-y:auto;
+}
+.sidebar-header{
+  padding:24px 28px 20px;
+  border-bottom:1px solid #E5E7EB;
+  background:#F9FAFB;
+}
+.sidebar-title{
+  font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--midnight);margin-bottom:4px;
+}
+.sidebar-sub{font-size:11px;color:#6B7280}
+.sidebar-prompt{
+  padding:40px 28px;
+  text-align:center;
+  color:#9CA3AF;
+  font-size:13px;line-height:1.6;
+}
+.sidebar-prompt svg{
+  width:32px;height:32px;
+  stroke:#D1D5DB;stroke-width:1;fill:none;
+  margin:0 auto 12px;display:block;
+}
+.node-data-panel{display:none;flex-direction:column}
+.node-data-panel.active{display:flex}
+.ndp-header{
+  padding:24px 28px 20px;
+  border-bottom:1px solid #E5E7EB;
+  background:#F9FAFB;
+}
+.ndp-region{
+  font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:4px;
+}
+.ndp-name{
+  font-size:18px;font-weight:800;color:var(--midnight);
+  margin-bottom:4px;letter-spacing:-0.01em;
+}
+.ndp-suburbs{font-size:11px;color:#6B7280;line-height:1.5}
+.ndp-metrics{padding:0}
+.metric-row{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:14px 28px;
+  border-bottom:1px solid #F3F4F6;
+  transition:background 0.15s ease;
+}
+.metric-row:hover{background:#F9FAFB}
+.metric-label{
+  font-size:11px;font-weight:500;color:#6B7280;
+  display:flex;align-items:center;gap:6px;
+}
+.metric-label svg{width:12px;height:12px;stroke:#9CA3AF;stroke-width:2;flex-shrink:0}
+.metric-value{
+  font-size:13px;font-weight:700;color:var(--midnight);
+  font-variant-numeric:tabular-nums;
+}
+.metric-value span{font-size:10px;font-weight:500;color:#9CA3AF}
+.availability-bar{
+  padding:16px 28px;
+  border-bottom:1px solid #F3F4F6;
+}
+.avail-label{
+  display:flex;justify-content:space-between;
+  font-size:10px;font-weight:600;
+  color:#6B7280;margin-bottom:8px;
+}
+.avail-track{
+  height:4px;background:#F3F4F6;border-radius:2px;
+  overflow:hidden;
+}
+.avail-fill{height:100%;background:var(--gold);border-radius:2px;transition:width 0.8s ease}
+.power-indicator{
+  padding:14px 28px;
+  display:flex;align-items:center;gap:10px;
+  border-bottom:1px solid #F3F4F6;
+  font-size:11px;font-weight:600;
+}
+.power-dot{
+  width:8px;height:8px;border-radius:50%;flex-shrink:0;
+}
+.power-available{color:#16A34A}
+.power-limited{color:#D97706}
+.ndp-cta{padding:20px 28px}
+
+/* ══════════════════════════════════════════════
+   FAQ
+   ══════════════════════════════════════════════ */
+#faq{
+  background:var(--midnight);
+  padding:140px 0;
+  border-top:1px solid var(--arch-line);
+}
+.faq-layout{
+  display:grid;grid-template-columns:400px 1fr;
+  gap:100px;align-items:start;
+}
+.faq-sticky{position:sticky;top:120px}
+.faq-h2{
+  font-family:var(--serif);
+  font-size:clamp(36px,3.5vw,48px);
+  color:var(--white);letter-spacing:-0.02em;line-height:1.1;
+  margin-bottom:20px;
+}
+.faq-h2 em{font-style:italic;color:var(--gold)}
+.faq-body-text{font-size:15px;line-height:1.8;color:var(--arch-mid);font-weight:300;margin-bottom:32px}
+
+.faq-item{border-bottom:1px solid var(--arch-line)}
+.faq-q{
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  padding:26px 0;cursor:pointer;
+}
+.faq-q h3{
+  font-size:15px;font-weight:600;
+  color:var(--arch-gray);line-height:1.4;
+  font-family:var(--sans);
+  transition:color 0.2s ease;
+}
+.faq-q:hover h3{color:var(--white)}
+.faq-toggle{
+  width:30px;height:30px;border-radius:50%;flex-shrink:0;
+  background:var(--arch-dim);
+  display:flex;align-items:center;justify-content:center;
+  transition:all 0.2s ease;
+}
+.faq-toggle svg{width:14px;height:14px;stroke:var(--arch-mid);transition:all 0.3s ease}
+.faq-item.open .faq-toggle{background:var(--gold)}
+.faq-item.open .faq-toggle svg{stroke:var(--midnight);transform:rotate(45deg)}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height 0.45s cubic-bezier(0.4,0,0.2,1)}
+.faq-item.open .faq-answer{max-height:400px}
+.faq-answer p{font-size:14px;line-height:1.8;color:var(--arch-mid);padding-bottom:24px;font-weight:300}
+
+/* ══════════════════════════════════════════════
+   STRATEGIC SITE AUDIT — PRIVATE CLIENT FUNNEL
+   ══════════════════════════════════════════════ */
+#audit{
+  background:var(--chamber);
+  padding:140px 0;
+  border-top:1px solid var(--arch-line);
+  position:relative;overflow:hidden;
+}
+#audit::before{
+  content:'';position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(201,168,76,0.03) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(201,168,76,0.03) 1px,transparent 1px);
+  background-size:72px 72px;
+}
+.audit-inner{
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:100px;align-items:start;
+}
+.audit-left{}
+.audit-h2{
+  font-family:var(--serif);
+  font-size:clamp(36px,4vw,54px);
+  color:var(--white);letter-spacing:-0.02em;line-height:1.08;
+  margin-bottom:20px;
+}
+.audit-h2 em{font-style:italic;color:var(--gold)}
+.audit-body{font-size:16px;line-height:1.8;color:var(--arch-mid);font-weight:300;margin-bottom:36px}
+.audit-perks{display:flex;flex-direction:column;gap:12px}
+.audit-perk{
+  display:flex;align-items:flex-start;gap:12px;
+  font-size:13px;line-height:1.5;color:var(--arch-mid);
+}
+.perk-icon{
+  width:20px;height:20px;
+  background:var(--gold-dim);border:1px solid var(--gold-border);
+  border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;margin-top:1px;
+}
+.perk-icon svg{width:10px;height:10px;stroke:var(--gold);stroke-width:2.5}
+
+/* Wizard */
+.audit-wizard{
+  background:rgba(13,27,42,0.6);
+  border:1px solid var(--arch-line);
+  border-radius:var(--r);
+  overflow:hidden;
+  backdrop-filter:blur(8px);
+}
+.wizard-top{
+  padding:24px 32px;
+  border-bottom:1px solid var(--arch-line);
+  background:rgba(13,27,42,0.4);
+  display:flex;align-items:center;justify-content:space-between;
+}
+.wizard-label{
+  font-size:9px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;
+  color:var(--gold);
+}
+.wizard-progress{display:flex;gap:5px}
+.wizard-pip{
+  height:3px;border-radius:2px;
+  transition:all 0.4s ease;
+}
+.wizard-pip.w-active{background:var(--gold);width:28px}
+.wizard-pip.w-done{background:rgba(201,168,76,0.4);width:14px}
+.wizard-pip.w-upcoming{background:rgba(255,255,255,0.08);width:14px}
+
+.wizard-body{padding:36px 32px}
+.w-step{display:none}
+.w-step.active{display:block;animation:formSlide 0.35s cubic-bezier(0.4,0,0.2,1)}
+.w-step-eyebrow{
+  font-size:9px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;
+  color:var(--arch-mid);margin-bottom:8px;
+}
+.w-step-q{
+  font-family:var(--serif);font-size:22px;
+  color:var(--white);margin-bottom:28px;line-height:1.2;
+}
+.w-options{display:flex;flex-direction:column;gap:8px;margin-bottom:28px}
+.w-opt{
+  padding:13px 18px;
+  border:1px solid var(--arch-line);
+  border-radius:var(--r);
+  background:transparent;
+  font-family:var(--sans);font-size:13px;font-weight:500;
+  color:var(--arch-gray);
+  cursor:pointer;text-align:left;
+  transition:all 0.2s ease;
+  display:flex;align-items:center;gap:10px;
+}
+.w-opt::before{
+  content:'';
+  width:16px;height:16px;
+  border:1px solid var(--arch-line);
+  border-radius:50%;flex-shrink:0;
+  transition:all 0.2s ease;
+}
+.w-opt:hover{border-color:var(--gold);color:var(--white);background:var(--gold-dim)}
+.w-opt:hover::before{border-color:var(--gold);background:var(--gold-dim)}
+.w-opt.selected{border-color:var(--gold);color:var(--white);background:var(--gold-dim)}
+.w-opt.selected::before{border-color:var(--gold);background:var(--gold);box-shadow:0 0 0 2px var(--gold-dim)}
+
+.w-select{
+  width:100%;padding:13px 16px;
+  background:var(--arch-dim);
+  border:1px solid var(--arch-line);
+  border-radius:var(--r);
+  font-family:var(--sans);font-size:13px;font-weight:500;
+  color:var(--arch-gray);
+  appearance:none;cursor:pointer;margin-bottom:28px;
+  transition:border-color 0.2s ease;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%239BA5B4' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 14px center;
+}
+.w-select:focus{outline:none;border-color:var(--gold)}
+.w-select option{background:var(--midnight);color:var(--arch-gray)}
+
+.w-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+.w-field-full{grid-column:1/-1}
+.w-label{
+  display:block;
+  font-size:9px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;
+  color:var(--arch-mid);margin-bottom:7px;
+}
+.w-input{
+  width:100%;padding:12px 14px;
+  background:var(--arch-dim);
+  border:1px solid var(--arch-line);
+  border-radius:var(--r);
+  font-family:var(--sans);font-size:13px;font-weight:400;
+  color:var(--white);
+  transition:border-color 0.2s ease;
+}
+.w-input:focus{outline:none;border-color:var(--gold)}
+.w-input::placeholder{color:rgba(155,165,180,0.5)}
+
+.w-nav{display:flex;align-items:center;gap:10px}
+.w-next{
+  flex:1;
+  padding:14px;
+  background:var(--gold);color:var(--midnight);
+  border:none;border-radius:var(--r);cursor:pointer;
+  font-family:var(--sans);font-size:11px;font-weight:800;
+  letter-spacing:0.14em;text-transform:uppercase;
+  transition:all 0.25s ease;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+}
+.w-next:hover{background:var(--gold-light);box-shadow:0 8px 24px rgba(201,168,76,0.3)}
+.w-next:hover svg{transform:translateX(3px)}
+.w-next svg{transition:transform 0.2s ease}
+.w-back{
+  padding:14px 18px;
+  background:transparent;color:var(--arch-mid);
+  border:1px solid var(--arch-line);border-radius:var(--r);
+  cursor:pointer;font-family:var(--sans);font-size:11px;font-weight:600;
+  letter-spacing:0.08em;
+  transition:all 0.2s ease;
+}
+.w-back:hover{border-color:var(--arch-mid);color:var(--arch-gray)}
+
+.w-success{display:none;text-align:center;padding:20px 0}
+.w-success.active{display:block;animation:formSlide 0.5s ease}
+.success-emblem{
+  width:72px;height:72px;
+  background:var(--gold-dim);
+  border:1px solid var(--gold-border);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 20px;
+}
+.success-emblem svg{width:28px;height:28px;stroke:var(--gold);stroke-width:2}
+.success-t{font-family:var(--serif);font-size:24px;color:var(--white);margin-bottom:12px}
+.success-b{font-size:14px;color:var(--arch-mid);line-height:1.7;font-weight:300}
+.success-b strong{color:var(--gold);font-weight:600}
+
+/* ══════════════════════════════════════════════
+   FOOTER
+   ══════════════════════════════════════════════ */
+footer{
+  background:#050D18;
+  border-top:1px solid var(--arch-line);
+  padding:80px 0 40px;
+}
+.footer-grid{
+  display:grid;grid-template-columns:280px 1fr 1fr 1fr;
+  gap:60px;
+  padding-bottom:60px;
+  border-bottom:1px solid var(--arch-line);
+  margin-bottom:40px;
+}
+.footer-brand{}
+.footer-tagline{font-size:13px;line-height:1.75;color:rgba(224,225,221,0.35);margin-top:20px}
+.footer-social{margin-top:24px;display:flex;gap:10px}
+.social-btn{
+  width:36px;height:36px;
+  background:var(--arch-dim);border:1px solid var(--arch-line);
+  border-radius:var(--r);
+  display:flex;align-items:center;justify-content:center;
+  transition:all 0.2s ease;text-decoration:none;
+  color:var(--arch-mid);
+}
+.social-btn:hover{background:var(--gold-dim);border-color:var(--gold-border);color:var(--gold)}
+.social-btn svg{width:16px;height:16px;fill:currentColor}
+.footer-col-title{
+  font-size:9px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:20px;
+}
+.footer-links{display:flex;flex-direction:column;gap:9px}
+.footer-links a{
+  font-size:13px;color:rgba(224,225,221,0.4);text-decoration:none;
+  transition:color 0.2s ease;
+}
+.footer-links a:hover{color:var(--gold)}
+.footer-offices{display:flex;flex-direction:column;gap:16px}
+.office-city{font-size:12px;font-weight:700;color:var(--arch-gray);margin-bottom:3px}
+.office-addr{font-size:11px;color:rgba(224,225,221,0.35);line-height:1.5}
+.footer-bottom{
+  display:flex;align-items:center;justify-content:space-between;
+  font-size:11px;color:rgba(224,225,221,0.2);
+}
+.nap-schema{display:none}
+
+/* ── Floating WhatsApp ── */
+.wa-float{
+  position:fixed;bottom:32px;right:32px;z-index:99;
+  display:flex;flex-direction:column;align-items:flex-end;gap:10px;
+}
+.wa-tip{
+  background:var(--midnight);
+  border:1px solid var(--arch-line);
+  color:var(--arch-gray);
+  font-size:11px;font-weight:500;
+  padding:7px 14px;border-radius:var(--r);
+  white-space:nowrap;opacity:0;transform:translateX(8px);
+  transition:all 0.25s ease;pointer-events:none;
+}
+.wa-float:hover .wa-tip{opacity:1;transform:translateX(0)}
+.wa-btn{
+  width:54px;height:54px;background:#25D366;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 24px rgba(37,211,102,0.4);
+  transition:all 0.25s ease;text-decoration:none;
+  position:relative;
+}
+.wa-btn:hover{transform:scale(1.08);box-shadow:0 12px 32px rgba(37,211,102,0.5)}
+.wa-btn svg{width:26px;height:26px;fill:white}
+.wa-dot{
+  position:absolute;top:1px;right:1px;
+  width:13px;height:13px;
+  background:var(--gold);border-radius:50%;
+  border:2px solid #050D18;
+  animation:blink 2.5s ease infinite;
+}
+
+/* ── Hamburger ── */
+.hamburger{
+  display:none;
+  flex-direction:column;justify-content:center;align-items:center;
+  gap:5px;width:40px;height:40px;
+  background:transparent;border:1px solid var(--arch-line);
+  border-radius:var(--r);cursor:pointer;padding:8px;
+  transition:border-color 0.2s ease;flex-shrink:0;
+}
+.hamburger:hover{border-color:var(--gold)}
+.hamburger span{
+  display:block;width:18px;height:1.5px;
+  background:var(--arch-gray);border-radius:2px;
+  transition:all 0.3s ease;transform-origin:center;
+}
+.hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+
+/* ── Mobile Nav Drawer ── */
+.mobile-nav{
+  display:none;
+  position:fixed;top:0;left:0;right:0;bottom:0;z-index:190;
+  background:var(--midnight-95);backdrop-filter:blur(20px);
+  padding-top:80px;
+  transform:translateY(-100%);
+  transition:transform 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.mobile-nav.open{transform:translateY(0)}
+.mobile-nav-inner{
+  display:flex;flex-direction:column;
+  padding:32px 28px;gap:6px;
+}
+.mobile-nav-inner a{
+  font-size:22px;font-weight:600;
+  color:var(--arch-gray);text-decoration:none;
+  padding:14px 0;
+  border-bottom:1px solid var(--arch-line);
+  transition:color 0.2s ease;
+  font-family:var(--sans);letter-spacing:-0.01em;
+}
+.mobile-nav-inner a:hover{color:var(--gold)}
+.mobile-nav-inner a:last-of-type{border-bottom:none;margin-bottom:20px}
+
+/* ── Desktop CTA hide on mobile ── */
+.desktop-cta{display:inline-flex}
+
+@media(max-width:1100px){
+  .hamburger{display:flex}
+  .mobile-nav{display:block}
+  .desktop-cta{display:none}
+  .hdr-phone{font-size:11px}
+}
+@media(max-width:480px){
+  .hdr-phone svg{display:none}
+  .hdr-phone{font-size:12px;font-weight:700;letter-spacing:0}
+}
+
+/* ── Mobile Bar ── */
+.mobile-bar{
+  display:none;
+  position:fixed;bottom:0;left:0;right:0;z-index:98;
+  background:var(--midnight);
+  border-top:1px solid var(--arch-line);
+  padding:12px 16px;
+  padding-bottom:calc(12px + env(safe-area-inset-bottom));
+}
+.mobile-bar-inner{display:flex;gap:10px}
+.m-call,.m-wa{
+  flex:1;padding:14px;border-radius:var(--r);
+  font-family:var(--sans);font-size:12px;font-weight:700;
+  letter-spacing:0.08em;text-transform:uppercase;
+  text-decoration:none;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+}
+.m-call{background:var(--gold);color:var(--midnight)}
+.m-wa{background:#25D366;color:white}
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE — TABLET (max 1100px)
+   ══════════════════════════════════════════════ */
+@media(max-width:1100px){
+  .container{padding:0 28px}
+
+  /* Header */
+  #hdr{padding:16px 28px}
+  #hdr.scrolled{padding:10px 28px}
+  nav{display:none}
+  .hdr-right .btn-gold{display:none}
+
+  /* Hero */
+  .hero-content{padding:120px 28px 60px}
+  .hero-data-panel{display:none}
+  .hero-coordinate{display:none}
+
+  /* Sections */
+  #advantage,#process,#sectors,#testimonials,#nodes,#faq,#audit{padding:80px 0}
+
+  /* Grids → single column */
+  .advantage-grid,
+  .audit-inner,
+  .faq-layout,
+  .footer-grid{grid-template-columns:1fr;gap:40px}
+
+  .nodes-layout{grid-template-columns:1fr}
+  .sectors-grid,.testi-grid{grid-template-columns:1fr}
+  .parameter-grid{grid-template-columns:1fr 1fr}
+
+  /* Trust strip */
+  .trust-strip-inner{grid-template-columns:1fr}
+  .ts-credentials{flex-wrap:wrap;border-right:none;border-bottom:1px solid var(--arch-line)}
+  .ts-cta-zone{border-left:none;border-top:1px solid var(--arch-line)}
+
+  /* Map */
+  .map-canvas{min-height:320px}
+
+  /* Floating WA → hide on tablet, mobile bar shows */
+  .wa-float{display:none}
+  .mobile-bar{display:block}
+
+  /* Audit section extra bottom padding for mobile bar */
+  #audit{padding-bottom:140px}
+
+  /* Form */
+  .w-fields{grid-template-columns:1fr}
+
+  /* FAQ */
+  .faq-sticky{position:static}
+}
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE — MOBILE (max 768px)
+   ══════════════════════════════════════════════ */
+@media(max-width:768px){
+  .container{padding:0 20px}
+
+  /* Header */
+  #hdr{padding:14px 20px}
+  #hdr.scrolled{padding:10px 20px}
+  .logo-tag{display:none}
+
+  /* Hero */
+  .hero-content{padding:100px 20px 48px}
+  .hero-eyebrow{font-size:8px;letter-spacing:0.18em}
+  .hero-h1{font-size:clamp(42px,10vw,58px)}
+  .hero-h1 .line2{font-size:clamp(13px,3.5vw,18px);letter-spacing:0.1em;margin-top:16px}
+  .hero-sub{font-size:15px;margin:24px 0 36px}
+  .hero-ctas{flex-direction:column;align-items:stretch;gap:10px}
+  .btn-gold,.btn-wa,.btn-ghost{justify-content:center;width:100%;padding:16px 24px}
+  .hero-trust{gap:14px}
+  .trust-item{font-size:10px}
+
+  /* Trust strip */
+  .ts-badge{padding:14px 18px}
+  .ts-ticker-label{padding:0 14px;font-size:8px}
+  .ticker-item{padding:0 16px;font-size:10px}
+
+  /* Advantage */
+  #advantage{padding:60px 0}
+  .adv-label{display:none}
+  .adv-heading{font-size:clamp(28px,7vw,40px)}
+  .adv-body,.adv-right-text{font-size:14px}
+  .stat-grid{grid-template-columns:1fr 1fr}
+  .stat-num{font-size:clamp(28px,7vw,40px)}
+  .stat-cell{padding:22px 18px}
+
+  /* Process */
+  #process{padding:60px 0}
+  .process-header{grid-template-columns:1fr;gap:16px}
+  .process-sub{text-align:left;max-width:100%}
+  .process-h2{font-size:clamp(26px,6vw,36px)}
+  .parameter-grid{grid-template-columns:1fr}
+  .param-card{padding:28px 24px 24px}
+  .param-number{font-size:48px}
+  .process-flow{flex-direction:column}
+  .flow-step{border-right:none;border-bottom:1px solid #E5E7EB;padding:18px 20px}
+  .flow-arrow{display:none}
+
+  /* Sectors */
+  #sectors{padding:60px 0}
+  .sectors-h2{font-size:clamp(26px,6vw,36px);margin-bottom:40px}
+  .sector-card{padding:36px 28px}
+  .sector-num{font-size:56px}
+
+  /* Testimonials */
+  #testimonials{padding:60px 0}
+  .testi-header{grid-template-columns:1fr;gap:16px}
+  .testi-meta{text-align:left}
+  .testi-h2{font-size:clamp(26px,6vw,36px)}
+  .testi-card{padding:32px 24px}
+  .testi-q{font-size:48px}
+  .testi-text{font-size:14px}
+
+  /* GIS Nodes */
+  #nodes{padding:60px 0}
+  .nodes-h2{font-size:clamp(26px,6vw,36px);margin-bottom:40px}
+  .map-canvas{min-height:280px}
+  .node-label{font-size:7px}
+
+  /* FAQ */
+  #faq{padding:60px 0}
+  .faq-h2{font-size:clamp(26px,6vw,36px)}
+  .faq-q h3{font-size:14px}
+  .faq-answer p{font-size:13px}
+
+  /* Audit / Wizard */
+  #audit{padding:60px 0 140px}
+  .audit-h2{font-size:clamp(26px,6vw,36px)}
+  .audit-body{font-size:14px}
+  .wizard-body{padding:24px 20px}
+  .wizard-top{padding:16px 20px;flex-direction:column;gap:12px;align-items:flex-start}
+  .w-step-q{font-size:18px}
+  .w-opt{font-size:12px;padding:11px 14px}
+  .w-next{font-size:10px;padding:13px}
+  .w-fields{grid-template-columns:1fr}
+
+  /* Footer */
+  footer{padding:60px 0 32px}
+  .footer-grid{grid-template-columns:1fr;gap:32px}
+  .footer-bottom{flex-direction:column;gap:8px;text-align:center;font-size:10px}
+
+  /* Audit modal */
+  #audit-modal{padding:16px}
+  #audit-modal > div > div{padding:28px 20px}
+}
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE — SMALL MOBILE (max 480px)
+   ══════════════════════════════════════════════ */
+@media(max-width:480px){
+  .container{padding:0 16px}
+
+  /* Header */
+  #hdr{padding:12px 16px}
+  .logo-name{font-size:12px}
+
+  /* Hero */
+  .hero-content{padding:88px 16px 40px}
+  .hero-h1{font-size:38px;line-height:0.97}
+  .hero-h1 .line2{font-size:12px;letter-spacing:0.08em}
+  .hero-sub{font-size:14px;line-height:1.65;margin:20px 0 28px}
+  .hero-eyebrow{font-size:7.5px}
+
+  /* Trust */
+  .hero-trust{gap:10px}
+  .trust-item{font-size:9.5px}
+
+  /* Trust strip — hide ticker on very small, show badges */
+  .ts-ticker-wrap{display:none}
+  .ts-credentials{border-bottom:none}
+  .ts-badge{padding:12px 14px}
+  .ts-badge-name{font-size:8px}
+  .ts-badge-sub{font-size:8px}
+
+  /* Sections padding */
+  #advantage,#process,#sectors,#testimonials,#nodes,#faq{padding:48px 0}
+  #audit{padding:48px 0 130px}
+
+  /* Stats */
+  .stat-grid{grid-template-columns:1fr 1fr}
+  .stat-num{font-size:32px}
+  .stat-cell{padding:18px 14px}
+  .stat-label{font-size:11px}
+
+  /* Param cards */
+  .param-card{padding:22px 18px 20px}
+  .param-metric{font-size:26px}
+  .param-icon{width:40px;height:40px;margin-bottom:16px}
+
+  /* Sector cards */
+  .sector-card{padding:28px 20px}
+  .sector-specs{gap:5px}
+  .spec-tag{font-size:9px;padding:4px 8px}
+
+  /* Testi cards */
+  .testi-card{padding:24px 18px}
+  .testi-author{flex-direction:column;gap:10px}
+  .testi-logo{width:52px;height:28px}
+
+  /* Wizard */
+  .wizard-body{padding:20px 16px}
+  .w-step-q{font-size:16px}
+  .w-opt{font-size:11px;padding:10px 12px}
+
+  /* Footer */
+  .footer-grid{gap:28px}
+  .footer-tagline{font-size:12px}
+  .footer-links a{font-size:12px}
+
+  /* Mobile bar */
+  .mobile-bar{padding:10px 16px;padding-bottom:calc(10px + env(safe-area-inset-bottom))}
+  .m-call,.m-wa{font-size:11px;padding:12px}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════ HEADER ═══════════════════ -->
+<header id="hdr">
+  <a href="#" class="logo" style="text-decoration:none">
+    <img src="data:image/png;base64,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" alt="Warehouse Finder" style="height:46px;width:auto;display:block;" />
+  </a>
+  <nav>
+    <a href="#process">Site Selection</a>
+    <a href="#sectors">Sectors</a>
+    <a href="#nodes">Industrial Nodes</a>
+    <a href="#faq">Intelligence</a>
+    <a href="#audit">Private Brief</a>
+  </nav>
+  <div class="hdr-right">
+    <a href="tel:+27600457443" class="hdr-phone">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+      </svg>
+      060 045 7443
+    </a>
+    <button class="btn-gold desktop-cta" onclick="openAudit()">
+      Initiate Site Selection
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </button>
+    <button class="hamburger" id="hamburger" onclick="toggleMobileNav()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Nav Drawer -->
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-inner">
+    <a href="#process" onclick="closeMobileNav()">Site Selection</a>
+    <a href="#sectors" onclick="closeMobileNav()">Sectors</a>
+    <a href="#nodes" onclick="closeMobileNav()">Industrial Nodes</a>
+    <a href="#faq" onclick="closeMobileNav()">Intelligence</a>
+    <a href="#audit" onclick="closeMobileNav()">Private Brief</a>
+    <button class="btn-gold" onclick="openAudit();closeMobileNav()" style="width:100%;justify-content:center;margin-top:8px">Commission Site Audit</button>
+  </div>
+</div>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-veil"></div>
+  <div class="hero-grid-overlay"></div>
+  <div class="hero-scanline"></div>
+
+  <div class="hero-coordinate">
+    <span>26°12′16″S</span>
+    <span>28°02′44″E</span>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="dot"></div>
+      INSTITUTIONAL AUTHORITY IN LOGISTICS &amp; INDUSTRIAL PROPERTY - SOUTH AFRICA
+    </div>
+
+    <h1 class="hero-h1">
+      Stop Searching.<br>
+      <em>Start Operating.</em>
+      <span class="line2">ON &amp; OFF-MARKET LOGISTICS, MANUFACTURE &amp; INDUSTRIAL PROPERTY</span>
+    </h1>
+
+    <p class="hero-sub">
+      South Africa's most exclusive on &amp; off-market industrial property consultancy. We don't list buildings — we <strong>secure high-performance logistics infrastructure</strong> by leveraging deep technical data and off-market networks that never reach the public market.
+    </p>
+
+    <div class="hero-ctas">
+      <button class="btn-gold" onclick="openAudit()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        Commission a Site Audit
+      </button>
+      <a href="https://wa.me/27600457443?text=Hi%2C%20I%27m%20looking%20for%20industrial%20space%20in%20South%20Africa" class="btn-wa" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp a Broker
+      </a>
+      <a href="tel:+27600457443" class="btn-ghost">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        060 045 7443
+      </a>
+    </div>
+
+    <div class="hero-trust">
+      <span class="trust-item">SAPOA Compliant</span>
+      <span class="trust-item">RICS Standards</span>
+      <span class="trust-item">B-BBEE Level 4</span>
+      <span class="trust-item">National Coverage</span>
+      <span class="trust-item">Zero Cost to Tenant</span>
+    </div>
+  </div>
+
+  <!-- Live market data panel -->
+  <div class="hero-data-panel">
+    <div class="data-panel-label">Prime Rental Intelligence</div>
+    <div class="data-row">
+      <span class="data-node">Pomona, JHB East</span>
+      <span class="data-rate">R78 <span>/m²/mo</span></span>
+    </div>
+    <div class="data-row">
+      <span class="data-node">Kempton Park</span>
+      <span class="data-rate">R82 <span>/m²/mo</span></span>
+    </div>
+    <div class="data-row">
+      <span class="data-node">Montague Gardens, CPT</span>
+      <span class="data-rate">R92 <span>/m²/mo</span></span>
+    </div>
+    <div class="data-row">
+      <span class="data-node">Riverhorse Valley, DBN</span>
+      <span class="data-rate">R71 <span>/m²/mo</span></span>
+    </div>
+    <div class="data-row">
+      <span class="data-node">Centurion, PTA</span>
+      <span class="data-rate">R76 <span>/m²/mo</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ TRUST STRIP ═══════════════════ -->
+<div id="trust-strip">
+  <div class="trust-strip-inner" style="max-width:1320px;margin:0 auto;padding:0 52px">
+    <div class="ts-credentials">
+      <div class="ts-badge">
+        <div class="ts-badge-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div class="ts-badge-name">SAPOA</div>
+        <div class="ts-badge-sub">Member</div>
+      </div>
+      <div class="ts-badge">
+        <div class="ts-badge-icon">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12h6M12 9v6"/></svg>
+        </div>
+        <div class="ts-badge-name">RICS</div>
+        <div class="ts-badge-sub">Standards</div>
+      </div>
+      <div class="ts-badge">
+        <div class="ts-badge-icon">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div class="ts-badge-name">B-BBEE</div>
+        <div class="ts-badge-sub">Level 4</div>
+      </div>
+      <div class="ts-badge">
+        <div class="ts-badge-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <div class="ts-badge-name">FFC</div>
+        <div class="ts-badge-sub">Compliant</div>
+      </div>
+    </div>
+
+    <div class="ts-ticker-wrap">
+      <div class="ts-ticker-label">Prime Vacancy Intelligence</div>
+      <div style="overflow:hidden;flex:1;">
+        <div class="ticker-track">
+          <!-- Track duplicated for seamless loop -->
+          <span class="ticker-item"><span class="ticker-node">Pomona East</span>&nbsp;<span class="ticker-rate">R78/m²</span>&nbsp;<span class="ticker-up ticker-change">↑2.3%</span></span>
+          <span class="ticker-item"><span class="ticker-node">Kempton Park</span>&nbsp;<span class="ticker-rate">R82/m²</span>&nbsp;<span class="ticker-up ticker-change">↑1.8%</span></span>
+          <span class="ticker-item"><span class="ticker-node">Montague Gardens</span>&nbsp;<span class="ticker-rate">R92/m²</span>&nbsp;<span class="ticker-up ticker-change">↑3.1%</span></span>
+          <span class="ticker-item"><span class="ticker-node">Riverhorse Valley</span>&nbsp;<span class="ticker-rate">R71/m²</span>&nbsp;<span class="ticker-down ticker-change">↓0.5%</span></span>
+          <span class="ticker-item"><span class="ticker-node">Centurion</span>&nbsp;<span class="ticker-rate">R76/m²</span>&nbsp;<span class="ticker-up ticker-change">↑1.2%</span></span>
+          <span class="ticker-item"><span class="ticker-node">Germiston</span>&nbsp;<span class="ticker-rate">R69/m²</span>&nbsp;<span class="ticker-up ticker-change">↑0.9%</span></span>
+          <span class="ticker-item"><span class="ticker-node">Epping Industria</span>&nbsp;<span class="ticker-rate">R88/m²</span>&nbsp;<span class="ticker-up ticker-change">↑2.7%</span></span>
+          <span class="ticker-item"><span class="ticker-node">Midrand</span>&nbsp;<span class="ticker-rate">R85/m²</span>&nbsp;<span class="ticker-up ticker-change">↑1.5%</span></span>
+          <!-- Duplicate -->
+          <span class="ticker-item"><span class="ticker-node">Pomona East</span>&nbsp;<span class="ticker-rate">R78/m²</span>&nbsp;<span class="ticker-up ticker-change">↑2.3%</span></span>
+          <span class="ticker-item"><span class="ticker-node">Kempton Park</span>&nbsp;<span class="ticker-rate">R82/m²</span>&nbsp;<span class="ticker-up ticker-change">↑1.8%</span></span>
+          <span class="ticker-item"><span class="ticker-node">Montague Gardens</span>&nbsp;<span class="ticker-rate">R92/m²</span>&nbsp;<span class="ticker-up ticker-change">↑3.1%</span></span>
+          <span class="ticker-item"><span class="ticker-node">Riverhorse Valley</span>&nbsp;<span class="ticker-rate">R71/m²</span>&nbsp;<span class="ticker-down ticker-change">↓0.5%</span></span>
+          <span class="ticker-item"><span class="ticker-node">Centurion</span>&nbsp;<span class="ticker-rate">R76/m²</span>&nbsp;<span class="ticker-up ticker-change">↑1.2%</span></span>
+          <span class="ticker-item"><span class="ticker-node">Germiston</span>&nbsp;<span class="ticker-rate">R69/m²</span>&nbsp;<span class="ticker-up ticker-change">↑0.9%</span></span>
+          <span class="ticker-item"><span class="ticker-node">Epping Industria</span>&nbsp;<span class="ticker-rate">R88/m²</span>&nbsp;<span class="ticker-up ticker-change">↑2.7%</span></span>
+          <span class="ticker-item"><span class="ticker-node">Midrand</span>&nbsp;<span class="ticker-rate">R85/m²</span>&nbsp;<span class="ticker-up ticker-change">↑1.5%</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ts-cta-zone">
+      <a href="tel:+27600457443" class="btn-ghost" style="white-space:nowrap;font-size:10px;padding:10px 18px">060 045 7443</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════ ADVANTAGE ═══════════════════ -->
+<section id="advantage">
+  <div class="container" style="position:relative">
+    <div class="adv-label">Industrial Private Banking</div>
+    <div class="advantage-grid">
+      <div>
+        <div class="eyebrow reveal">The Concierge Advantage</div>
+        <h2 class="adv-heading reveal delay-1">
+          The best properties<br>
+          <em>never reach</em><br>
+          public listings.
+        </h2>
+        <p class="adv-body reveal delay-2">
+          In a market defined by load shedding risk, port congestion, and surging 3PL demand, <strong>prime industrial real estate is leased through private networks.</strong> The facilities with solar backup, stable 3-phase infrastructure, and optimised dock ratios are gone before they're ever advertised.
+        </p>
+        <div class="stat-grid reveal delay-3">
+          <div class="stat-cell">
+            <div class="stat-num">72%</div>
+            <div class="stat-label">Of premium SA industrial stock leased off-market annually</div>
+          </div>
+          <div class="stat-cell">
+            <div class="stat-num">14d</div>
+            <div class="stat-label">Average time from brief to qualified property match</div>
+          </div>
+          <div class="stat-cell">
+            <div class="stat-num">R0</div>
+            <div class="stat-label">Our fee to the tenant — always fully landlord-paid</div>
+          </div>
+          <div class="stat-cell">
+            <div class="stat-num">4</div>
+            <div class="stat-label">Cities with embedded senior broker teams</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="adv-right-text reveal">
+          Browsing public portals is not a strategy — it's a distraction for operational leadership. <strong>Warehouse Finder operates like an industrial private bank:</strong> institutional data access, private transaction networks, and technical expertise most tenants never get.
+        </p>
+        <p class="adv-right-text reveal delay-1" style="margin-top:20px">
+          Our brokers are embedded in every major industrial node across Gauteng, the Western Cape, and KwaZulu-Natal. They know which landlords are restructuring leases before notice is given, which developers are pre-leasing before slab pour, and which institutional investors are offloading assets.
+        </p>
+        <div class="adv-quote reveal delay-2">
+          <p>"We don't find warehouses. We orchestrate supply chain success through data, relationships, and technical precision that never appears on a listing portal."</p>
+          <cite>— Warehouse Finder, Private Client Charter</cite>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SITE SELECTION STRATEGY ═══════════════════ -->
+<section id="process">
+  <div class="container">
+    <div class="process-header reveal">
+      <div>
+        <div class="eyebrow" style="color:#0A2463">Site Selection Strategy</div>
+        <h2 class="process-h2">The four parameters<br>that <em>define every brief.</em></h2>
+      </div>
+      <p class="process-sub">Every property we source is benchmarked against your technical specification — not approximated against generic search filters.</p>
+    </div>
+
+    <div class="parameter-grid reveal delay-1">
+
+      <!-- GLA Card -->
+      <div class="param-card active" onclick="activateParam(this)">
+        <span class="param-number">01</span>
+        <div class="param-icon">
+          <!-- GLA / Floor Area technical icon -->
+          <svg viewBox="0 0 52 52">
+            <rect x="6" y="6" width="40" height="40" rx="1"/>
+            <line x1="6" y1="26" x2="46" y2="26"/>
+            <line x1="26" y1="6" x2="26" y2="46"/>
+            <line x1="2" y1="6" x2="2" y2="46"/><line x1="2" y1="46" x2="6" y2="46"/><line x1="2" y1="6" x2="6" y2="6"/>
+            <line x1="6" y1="50" x2="46" y2="50"/><line x1="6" y1="50" x2="6" y2="46"/><line x1="46" y1="50" x2="46" y2="46"/>
+          </svg>
+        </div>
+        <div class="param-title">Gross Leasable Area</div>
+        <div class="param-metric">GLA</div>
+        <div class="param-unit">Floor Size · m²</div>
+        <p class="param-body">Minimum, preferred, and maximum GLA thresholds — including future expansion requirements and sub-division tolerance.</p>
+      </div>
+
+      <!-- Eave Height Card -->
+      <div class="param-card" onclick="activateParam(this)">
+        <span class="param-number">02</span>
+        <div class="param-icon">
+          <!-- Eave Height technical icon -->
+          <svg viewBox="0 0 52 52">
+            <rect x="8" y="20" width="36" height="26" rx="1"/>
+            <path d="M8 20 L26 6 L44 20"/>
+            <line x1="46" y1="6" x2="46" y2="46"/><line x1="44" y1="6" x2="48" y2="6"/><line x1="44" y1="46" x2="48" y2="46"/>
+            <line x1="48" y1="6" x2="48" y2="46"/>
+            <line x1="26" y1="6" x2="26" y2="46" stroke-dasharray="3 3"/>
+          </svg>
+        </div>
+        <div class="param-title">Clear Eave Height</div>
+        <div class="param-metric">12m+</div>
+        <div class="param-unit">Structural Clearance</div>
+        <p class="param-body">Verified springing line and clear height to underside of haunch — critical for high-bay racking, ASRS systems, and mezzanine feasibility.</p>
+      </div>
+
+      <!-- Power / Amps Card -->
+      <div class="param-card" onclick="activateParam(this)">
+        <span class="param-number">03</span>
+        <div class="param-icon">
+          <!-- Power / Amps technical icon -->
+          <svg viewBox="0 0 52 52">
+            <polygon points="30,4 14,28 24,28 22,48 38,24 28,24"/>
+            <circle cx="8" cy="10" r="4"/>
+            <circle cx="44" cy="10" r="4"/>
+            <line x1="12" y1="10" x2="18" y2="10"/>
+            <line x1="34" y1="10" x2="40" y2="10"/>
+            <line x1="8" y1="14" x2="8" y2="20"/>
+            <line x1="44" y1="14" x2="44" y2="20"/>
+          </svg>
+        </div>
+        <div class="param-title">Power Infrastructure</div>
+        <div class="param-metric">800A</div>
+        <div class="param-unit">3-Phase Supply · Amps</div>
+        <p class="param-body">Available amperage, transformer capacity, solar PV and battery backup, generator provisions — and Eskom supply security rating by node.</p>
+      </div>
+
+      <!-- Dock Ratio Card -->
+      <div class="param-card" onclick="activateParam(this)">
+        <span class="param-number">04</span>
+        <div class="param-icon">
+          <!-- Dock Ratio technical icon -->
+          <svg viewBox="0 0 52 52">
+            <rect x="4" y="18" width="44" height="28" rx="1"/>
+            <rect x="10" y="26" width="12" height="20" rx="1"/>
+            <rect x="30" y="26" width="12" height="20" rx="1"/>
+            <path d="M4 18 L4 10 L48 10 L48 18"/>
+            <line x1="16" y1="10" x2="16" y2="4"/><line x1="36" y1="10" x2="36" y2="4"/>
+            <line x1="2" y1="46" x2="50" y2="46"/>
+            <rect x="10" y="26" width="12" height="4" fill="currentColor" opacity="0.15"/>
+            <rect x="30" y="26" width="12" height="4" fill="currentColor" opacity="0.15"/>
+          </svg>
+        </div>
+        <div class="param-title">Dock &amp; Yard Ratio</div>
+        <div class="param-metric">1:800</div>
+        <div class="param-unit">Dock Doors per m²</div>
+        <p class="param-body">Cross-dock capability, dock leveller specifications, yard depth for B-double articulation, and container staging capacity.</p>
+      </div>
+    </div>
+
+    <!-- Process Flow -->
+    <div class="process-flow reveal delay-2">
+      <div class="flow-step">
+        <div class="flow-step-num">1</div>
+        <div class="flow-step-text">
+          <div class="flow-step-title">Parameter Brief</div>
+          <div class="flow-step-sub">Technical specification captured</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num">2</div>
+        <div class="flow-step-text">
+          <div class="flow-step-title">Off-Market Activation</div>
+          <div class="flow-step-sub">Private network engaged</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num">3</div>
+        <div class="flow-step-text">
+          <div class="flow-step-title">Site Audit Report</div>
+          <div class="flow-step-sub">Curated shortlist delivered</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num">4</div>
+        <div class="flow-step-text">
+          <div class="flow-step-title">Lease Negotiation</div>
+          <div class="flow-step-sub">Terms secured &amp; documented</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SECTOR EXPERTISE ═══════════════════ -->
+<section id="sectors">
+  <div class="container">
+    <div class="eyebrow reveal">Sector Intelligence</div>
+    <h2 class="sectors-h2 reveal delay-1">Built for the operators<br>who <em>move South Africa.</em></h2>
+    <div class="sectors-grid">
+      <div class="sector-card reveal">
+        <span class="sector-num">01</span>
+        <div class="sector-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="20" width="40" height="22" rx="1"/>
+            <path d="M4 24h40M12 20V12a2 2 0 012-2h20a2 2 0 012 2v8"/>
+            <path d="M16 42v-8h16v8M8 30h4M36 30h4"/>
+          </svg>
+        </div>
+        <div class="sector-name">Logistics &amp; 3PL</div>
+        <div class="sector-focus">Distribution &amp; Movement Efficiency</div>
+        <p class="sector-body">High-throughput facilities require more than square metres. We source properties with optimal dock-to-floor ratios, N-series highway proximity, cross-dock capability, and yard depth for B-double articulation.</p>
+        <div class="sector-specs">
+          <span class="spec-tag">Dock Ratios</span>
+          <span class="spec-tag">N1 / N3 Access</span>
+          <span class="spec-tag">Yard Depth</span>
+          <span class="spec-tag">Container Staging</span>
+          <span class="spec-tag">Cross-Dock</span>
+        </div>
+      </div>
+
+      <div class="sector-card reveal delay-1">
+        <span class="sector-num">02</span>
+        <div class="sector-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="12" width="36" height="28" rx="1"/>
+            <path d="M6 20h36M18 12V8M30 12V8M14 28h4v8h-4zM22 24h4v12h-4zM30 28h4v8h-4z"/>
+          </svg>
+        </div>
+        <div class="sector-name">Manufacturing</div>
+        <div class="sector-focus">Power Infrastructure &amp; Structural Capacity</div>
+        <p class="sector-body">Production environments are non-negotiable on power security. We secure facilities with verified 3-phase supply, confirmed amperage, structural floor loading up to 60kN/m², and solar or diesel generator backup.</p>
+        <div class="sector-specs">
+          <span class="spec-tag">3-Phase Power</span>
+          <span class="spec-tag">800A+ Capacity</span>
+          <span class="spec-tag">Floor Loading</span>
+          <span class="spec-tag">Solar Backup</span>
+          <span class="spec-tag">Generator</span>
+        </div>
+      </div>
+
+      <div class="sector-card reveal delay-2">
+        <span class="sector-num">03</span>
+        <div class="sector-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 40V16l16-10 16 10v24H8z"/>
+            <path d="M20 40v-12h8v12M8 24h32M16 16l8-5 8 5"/>
+            <line x1="24" y1="6" x2="24" y2="40"/>
+          </svg>
+        </div>
+        <div class="sector-name">Warehousing &amp; Storage</div>
+        <div class="sector-focus">Vertical Utilisation &amp; Racking Optimisation</div>
+        <p class="sector-body">Maximum storage density is an eaves-height conversation. We target facilities with 12m+ clear heights, column grids optimised for selective or drive-in racking, and ASRS-readiness for automated operations.</p>
+        <div class="sector-specs">
+          <span class="spec-tag">12m+ Eaves</span>
+          <span class="spec-tag">Column Grid</span>
+          <span class="spec-tag">Selective Rack</span>
+          <span class="spec-tag">Drive-In Rack</span>
+          <span class="spec-tag">ASRS Ready</span>
+        </div>
+      </div>
+
+      <div class="sector-card reveal delay-3">
+        <span class="sector-num">04</span>
+        <div class="sector-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="30" width="36" height="12" rx="1"/>
+            <path d="M10 30V18l4-4h20l4 4v12M18 18h12M14 30V22M34 30V22"/>
+            <line x1="6" y1="42" x2="42" y2="42"/>
+            <circle cx="16" cy="38" r="2"/><circle cx="32" cy="38" r="2"/>
+          </svg>
+        </div>
+        <div class="sector-name">Development &amp; Land</div>
+        <div class="sector-focus">Turnkey Build-to-Suit &amp; Land Acquisition</div>
+        <p class="sector-body">When existing stock can't meet your specification, we broker industrial land and turnkey build-to-suit arrangements with SA's leading industrial developers — from site identification to lease commencement.</p>
+        <div class="sector-specs">
+          <span class="spec-tag">Serviced Land</span>
+          <span class="spec-tag">BTS Contracts</span>
+          <span class="spec-tag">Growthpoint</span>
+          <span class="spec-tag">Fortress REIT</span>
+          <span class="spec-tag">Equites</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ TESTIMONIALS ═══════════════════ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="testi-header reveal">
+      <div>
+        <div class="eyebrow">Client Intelligence Reports</div>
+        <h2 class="testi-h2">What institutional<br>operators say <em>after the deal.</em></h2>
+      </div>
+      <div class="testi-meta">
+        <div class="testi-meta-num">3</div>
+        <div class="testi-meta-label">Verified Client Outcomes</div>
+      </div>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="testi-result-badge">
+          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          14 Days · 10,000m² · Solar Secured
+        </div>
+        <div class="testi-q">"</div>
+        <p class="testi-text">Warehouse Finder bypassed the public market entirely and secured a 10,000m² distribution centre in Pomona with full solar backup and dedicated dock levellers. We were operational within two weeks of the brief. The level of technical understanding was unmatched.</p>
+        <div class="testi-author">
+          <div class="testi-person">
+            <div class="testi-name">Thabo Mkhize</div>
+            <div class="testi-role">Head of Supply Chain · FMCG Group, JHB</div>
+          </div>
+          <div class="testi-logo">FMCG</div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal delay-1">
+        <div class="testi-result-badge">
+          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          3 Sites · 48 Hours · R2.4M Saved
+        </div>
+        <div class="testi-q">"</div>
+        <p class="testi-text">We needed three simultaneously available sites across Gauteng for a national rollout. Warehouse Finder presented vetted, off-market options within 48 hours. The lease terms negotiated saved our operation over R2.4 million in year one alone.</p>
+        <div class="testi-author">
+          <div class="testi-person">
+            <div class="testi-name">Sandra van der Merwe</div>
+            <div class="testi-role">COO · National 3PL Operator, PTA</div>
+          </div>
+          <div class="testi-logo">3PL</div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal delay-2">
+        <div class="testi-result-badge">
+          <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          800A · 12% Under Budget · Off-Market
+        </div>
+        <div class="testi-q">"</div>
+        <p class="testi-text">Their understanding of power infrastructure requirements is elite. They sourced a facility in Montague Gardens with 800-amp 3-phase supply and full generator backup — off-market, at 12% below budget. Zero fee to us. This is not a brokerage — it's an intelligence operation.</p>
+        <div class="testi-author">
+          <div class="testi-person">
+            <div class="testi-name">Deon Roos</div>
+            <div class="testi-role">Facilities Director · Manufacturing Group, CPT</div>
+          </div>
+          <div class="testi-logo">MFG</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ GIS NODE MAP ═══════════════════ -->
+<section id="nodes">
+  <div class="container">
+    <div class="eyebrow reveal">Industrial Node Intelligence</div>
+    <h2 class="nodes-h2 reveal delay-1">National coverage.<br><em>Embedded local expertise.</em></h2>
+    <div class="nodes-layout reveal delay-2">
+      <div class="map-canvas">
+        <div class="map-canvas-bg"></div>
+        <div class="map-title">SOUTH AFRICA — INDUSTRIAL NODE MAP</div>
+        <div class="map-subtitle">Select a node to view institutional metrics</div>
+
+        <!-- South Africa outline — Wikimedia authoritative SVG silhouette -->
+        <img class="sa-map"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/South_Africa_%28orthographic_projection%29.svg/800px-South_Africa_%28orthographic_projection%29.svg.png"
+          alt="South Africa map outline"
+        />
+
+        <!-- Node Markers — calibrated to Wikimedia SA silhouette above -->
+        <!-- JHB: Gauteng, northeast-central interior -->
+        <div class="node-marker active" style="left:57%;top:36%" data-node="jhb" onclick="showNode('jhb')">
+          <div class="node-ring"></div>
+          <div class="node-ring-2"></div>
+          <div class="node-dot"></div>
+          <div class="node-label">JHB</div>
+        </div>
+        <!-- PTA: 50km north of JHB -->
+        <div class="node-marker" style="left:57%;top:31%" data-node="pta" onclick="showNode('pta')">
+          <div class="node-ring"></div>
+          <div class="node-dot"></div>
+          <div class="node-label">PTA</div>
+        </div>
+        <!-- Midrand: between JHB and PTA -->
+        <div class="node-marker" style="left:58%;top:33.5%" data-node="midrand" onclick="showNode('midrand')">
+          <div class="node-dot"></div>
+          <div class="node-label">Midrand</div>
+        </div>
+        <!-- CPT: far southwest, Cape Peninsula -->
+        <div class="node-marker" style="left:22%;top:76%" data-node="cpt" onclick="showNode('cpt')">
+          <div class="node-ring"></div>
+          <div class="node-dot"></div>
+          <div class="node-label">CPT</div>
+        </div>
+        <!-- DBN: east coast KZN -->
+        <div class="node-marker" style="left:71%;top:52%" data-node="dbn" onclick="showNode('dbn')">
+          <div class="node-ring"></div>
+          <div class="node-dot"></div>
+          <div class="node-label">DBN</div>
+        </div>
+        <!-- GQP: Eastern Cape south coast -->
+        <div class="node-marker" style="left:52%;top:70%" data-node="gqp" onclick="showNode('gqp')">
+          <div class="node-dot"></div>
+          <div class="node-label">GQP</div>
+        </div>
+
+        <div class="map-legend">
+          <div class="legend-item"><div class="legend-dot"></div> Active Coverage</div>
+          <div class="legend-item"><div class="legend-dot dim"></div> Extended Network</div>
+        </div>
+      </div>
+
+      <div class="map-sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-title">Node Intelligence Dashboard</div>
+          <div class="sidebar-sub">Select a node on the map to view data</div>
+        </div>
+
+        <div class="sidebar-prompt" id="sidebar-prompt">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          Click any node marker on the map to view vacancy rates, prime rental ranges, and power availability data.
+        </div>
+
+        <!-- JHB -->
+        <div class="node-data-panel" id="node-jhb">
+          <div class="ndp-header">
+            <div class="ndp-region">Gauteng East · Prime Node</div>
+            <div class="ndp-name">Johannesburg</div>
+            <div class="ndp-suburbs">Pomona · Kempton Park · Isando · Spartan · Germiston · Boksburg</div>
+          </div>
+          <div class="ndp-metrics">
+            <div class="metric-row">
+              <span class="metric-label"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg>Vacancy Rate</span>
+              <span class="metric-value">4.2% <span>Industrial</span></span>
+            </div>
+            <div class="metric-row">
+              <span class="metric-label"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>Prime Rental</span>
+              <span class="metric-value">R74–84 <span>/m²/mo</span></span>
+            </div>
+            <div class="metric-row">
+              <span class="metric-label"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Avg Eaves Height</span>
+              <span class="metric-value">10.5m <span>clear</span></span>
+            </div>
+            <div class="metric-row">
+              <span class="metric-label"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Avg GLA Available</span>
+              <span class="metric-value">6,200m² <span>typical</span></span>
+            </div>
+            <div class="availability-bar">
+              <div class="avail-label"><span>Off-Market Availability</span><span>High</span></div>
+              <div class="avail-track"><div class="avail-fill" style="width:78%"></div></div>
+            </div>
+            <div class="power-indicator">
+              <div class="power-dot" style="background:#16A34A"></div>
+              <span class="power-available">3-Phase power widely available · Solar-enabled stock increasing</span>
+            </div>
+          </div>
+          <div class="ndp-cta">
+            <button class="btn-gold" style="width:100%;justify-content:center;font-size:10px" onclick="openAudit()">Brief for JHB Nodes →</button>
+          </div>
+        </div>
+
+        <!-- PTA -->
+        <div class="node-data-panel" id="node-pta">
+          <div class="ndp-header">
+            <div class="ndp-region">Gauteng North · Strategic Node</div>
+            <div class="ndp-name">Pretoria / Centurion</div>
+            <div class="ndp-suburbs">Centurion · Pretoria East · Rosslyn · Silverton · Pretoria West</div>
+          </div>
+          <div class="ndp-metrics">
+            <div class="metric-row"><span class="metric-label"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg>Vacancy Rate</span><span class="metric-value">5.8% <span>Industrial</span></span></div>
+            <div class="metric-row"><span class="metric-label"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>Prime Rental</span><span class="metric-value">R72–80 <span>/m²/mo</span></span></div>
+            <div class="metric-row"><span class="metric-label"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Avg Eaves Height</span><span class="metric-value">9.8m <span>clear</span></span></div>
+            <div class="metric-row"><span class="metric-label"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Avg GLA Available</span><span class="metric-value">4,800m² <span>typical</span></span></div>
+            <div class="availability-bar"><div class="avail-label"><span>Off-Market Availability</span><span>Medium-High</span></div><div class="avail-track"><div class="avail-fill" style="width:62%"></div></div></div>
+            <div class="power-indicator"><div class="power-dot" style="background:#16A34A"></div><span class="power-available">Good 3-phase infrastructure · Rosslyn industrial-grade supply</span></div>
+          </div>
+          <div class="ndp-cta"><button class="btn-gold" style="width:100%;justify-content:center;font-size:10px" onclick="openAudit()">Brief for PTA Nodes →</button></div>
+        </div>
+
+        <!-- Midrand -->
+        <div class="node-data-panel" id="node-midrand">
+          <div class="ndp-header">
+            <div class="ndp-region">Gauteng Central · Growth Node</div>
+            <div class="ndp-name">Midrand / Samrand</div>
+            <div class="ndp-suburbs">Midrand · Samrand · Kyalami · Waterfall · Longlake</div>
+          </div>
+          <div class="ndp-metrics">
+            <div class="metric-row"><span class="metric-label"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg>Vacancy Rate</span><span class="metric-value">3.1% <span>Industrial</span></span></div>
+            <div class="metric-row"><span class="metric-label"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>Prime Rental</span><span class="metric-value">R80–90 <span>/m²/mo</span></span></div>
+            <div class="metric-row"><span class="metric-label"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Avg Eaves Height</span><span class="metric-value">12.2m <span>clear</span></span></div>
+            <div class="metric-row"><span class="metric-label"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Avg GLA Available</span><span class="metric-value">8,400m² <span>typical</span></span></div>
+            <div class="availability-bar"><div class="avail-label"><span>Off-Market Availability</span><span>Very High</span></div><div class="avail-track"><div class="avail-fill" style="width:88%"></div></div></div>
+            <div class="power-indicator"><div class="power-dot" style="background:#16A34A"></div><span class="power-available">Excellent infrastructure · New BTS stock available · Solar standard</span></div>
+          </div>
+          <div class="ndp-cta"><button class="btn-gold" style="width:100%;justify-content:center;font-size:10px" onclick="openAudit()">Brief for Midrand Nodes →</button></div>
+        </div>
+
+        <!-- CPT -->
+        <div class="node-data-panel" id="node-cpt">
+          <div class="ndp-header">
+            <div class="ndp-region">Western Cape · Port Node</div>
+            <div class="ndp-name">Cape Town</div>
+            <div class="ndp-suburbs">Airport Industria · Montague Gardens · Epping · Blackheath · Stikland</div>
+          </div>
+          <div class="ndp-metrics">
+            <div class="metric-row"><span class="metric-label"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg>Vacancy Rate</span><span class="metric-value">2.8% <span>Industrial</span></span></div>
+            <div class="metric-row"><span class="metric-label"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>Prime Rental</span><span class="metric-value">R86–96 <span>/m²/mo</span></span></div>
+            <div class="metric-row"><span class="metric-label"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Avg Eaves Height</span><span class="metric-value">9.4m <span>clear</span></span></div>
+            <div class="metric-row"><span class="metric-label"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Avg GLA Available</span><span class="metric-value">3,600m² <span>typical</span></span></div>
+            <div class="availability-bar"><div class="avail-label"><span>Off-Market Availability</span><span>Constrained</span></div><div class="avail-track"><div class="avail-fill" style="width:38%"></div></div></div>
+            <div class="power-indicator"><div class="power-dot" style="background:#D97706"></div><span class="power-limited">Power constrained in older nodes · Airport Industria strongest supply</span></div>
+          </div>
+          <div class="ndp-cta"><button class="btn-gold" style="width:100%;justify-content:center;font-size:10px" onclick="openAudit()">Brief for Cape Town Nodes →</button></div>
+        </div>
+
+        <!-- DBN -->
+        <div class="node-data-panel" id="node-dbn">
+          <div class="ndp-header">
+            <div class="ndp-region">KwaZulu-Natal · Port Node</div>
+            <div class="ndp-name">Durban</div>
+            <div class="ndp-suburbs">Riverhorse Valley · Pinetown · Springfield · Umlaas Road · Dube TradePort</div>
+          </div>
+          <div class="ndp-metrics">
+            <div class="metric-row"><span class="metric-label"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg>Vacancy Rate</span><span class="metric-value">6.4% <span>Industrial</span></span></div>
+            <div class="metric-row"><span class="metric-label"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>Prime Rental</span><span class="metric-value">R66–76 <span>/m²/mo</span></span></div>
+            <div class="metric-row"><span class="metric-label"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Avg Eaves Height</span><span class="metric-value">10.1m <span>clear</span></span></div>
+            <div class="metric-row"><span class="metric-label"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Avg GLA Available</span><span class="metric-value">5,200m² <span>typical</span></span></div>
+            <div class="availability-bar"><div class="avail-label"><span>Off-Market Availability</span><span>High</span></div><div class="avail-track"><div class="avail-fill" style="width:72%"></div></div></div>
+            <div class="power-indicator"><div class="power-dot" style="background:#16A34A"></div><span class="power-available">Stable 3-phase in most nodes · Dube TradePort excellent infrastructure</span></div>
+          </div>
+          <div class="ndp-cta"><button class="btn-gold" style="width:100%;justify-content:center;font-size:10px" onclick="openAudit()">Brief for Durban Nodes →</button></div>
+        </div>
+
+        <!-- GQP -->
+        <div class="node-data-panel" id="node-gqp">
+          <div class="ndp-header">
+            <div class="ndp-region">Eastern Cape · IDZ Node</div>
+            <div class="ndp-name">Gqeberha / East London</div>
+            <div class="ndp-suburbs">Deal Party · Markman · Coega IDZ · East London IDZ · Uitenhage</div>
+          </div>
+          <div class="ndp-metrics">
+            <div class="metric-row"><span class="metric-label"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg>Vacancy Rate</span><span class="metric-value">9.2% <span>Industrial</span></span></div>
+            <div class="metric-row"><span class="metric-label"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>Prime Rental</span><span class="metric-value">R55–65 <span>/m²/mo</span></span></div>
+            <div class="metric-row"><span class="metric-label"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Avg Eaves Height</span><span class="metric-value">8.8m <span>clear</span></span></div>
+            <div class="metric-row"><span class="metric-label"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Avg GLA Available</span><span class="metric-value">4,100m² <span>typical</span></span></div>
+            <div class="availability-bar"><div class="avail-label"><span>Off-Market Availability</span><span>Medium</span></div><div class="avail-track"><div class="avail-fill" style="width:52%"></div></div></div>
+            <div class="power-indicator"><div class="power-dot" style="background:#16A34A"></div><span class="power-available">Coega IDZ excellent · Dedicated substation infrastructure available</span></div>
+          </div>
+          <div class="ndp-cta"><button class="btn-gold" style="width:100%;justify-content:center;font-size:10px" onclick="openAudit()">Brief for EC Nodes →</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FAQ ═══════════════════ -->
+<section id="faq">
+  <div class="container">
+    <div class="faq-layout">
+      <div class="faq-sticky">
+        <div class="eyebrow reveal">Market Intelligence</div>
+        <h2 class="faq-h2 reveal delay-1">Questions from<br>supply chain <em>executives.</em></h2>
+        <p class="faq-body-text reveal delay-2">Answers to the questions institutional operators ask before engaging a private property concierge.</p>
+        <div class="reveal delay-3">
+          <button class="btn-gold" onclick="openAudit()">Commission a Site Audit</button>
+        </div>
+        <div style="margin-top:14px" class="reveal delay-4">
+          <a href="tel:+27600457443" class="btn-ghost">060 045 7443</a>
+        </div>
+      </div>
+      <div class="faq-list reveal delay-1">
+        <div class="faq-item" id="faq-cost">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <h3>What does your service cost us as a tenant or occupier?</h3>
+            <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </div>
+          <div class="faq-answer"><p>Absolutely nothing. Our fees are 100% landlord-paid — standard practice in commercial property brokerage where landlords build leasing commissions into their cost structure. You receive a fully-resourced, senior institutional brokerage team working exclusively in your interest at zero cost to your organisation.</p></div>
+        </div>
+        <div class="faq-item" id="faq-offmarket">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <h3>What does "off-market" actually mean in the SA industrial context?</h3>
+            <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </div>
+          <div class="faq-answer"><p>Off-market properties are spaces that institutional landlords and developers — Fortress REIT, Growthpoint, Equites, Attacq — make available privately through trusted broker relationships before or instead of public listing. This includes occupied properties with known upcoming vacancies, developer stock being pre-leased before slab pour, and institutional investor assets being repositioned. In our network, this represents over 70% of prime industrial stock transacted annually.</p></div>
+        </div>
+        <div class="faq-item" id="faq-speed">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <h3>How quickly can you identify and present qualified properties?</h3>
+            <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </div>
+          <div class="faq-answer"><p>For standard specifications (500m²–10,000m²) in primary nodes, we typically present a curated shortlist within 48 hours of brief completion. For technically complex requirements — high amperage manufacturing, ASRS-ready warehousing, or multi-site national rollouts — allow 5–10 business days for a properly vetted report. Our average across all engagement types is 14 days from brief to heads of terms.</p></div>
+        </div>
+        <div class="faq-item" id="faq-power">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <h3>Can you guarantee power-secure properties given load shedding?</h3>
+            <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </div>
+          <div class="faq-answer"><p>Power security is one of the most common mandatory criteria we receive and is a core competency of our team. We specifically filter our network for power-secured facilities — confirmed solar PV capacity, battery storage ratings, diesel generator specifications, and Eskom supply security by node. We verify this data directly with landlords, not from listings. We can provide node-by-node power security assessments as part of the site audit.</p></div>
+        </div>
+        <div class="faq-item" id="faq-size">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <h3>What size range and deal types do you handle?</h3>
+            <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </div>
+          <div class="faq-answer"><p>Our private network is deepest for requirements between 1,500m² and 50,000m². For requirements above 50,000m² we typically facilitate build-to-suit negotiations directly with institutional developers. We handle leasing, renewals, subleases, land acquisition, and turnkey build-to-suit contracts. We do not handle retail or office property — we are exclusively industrial.</p></div>
+        </div>
+        <div class="faq-item" id="faq-regions">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <h3>Which regions and industrial nodes do you cover nationally?</h3>
+            <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+          </div>
+          <div class="faq-answer"><p>We have embedded senior broker teams in Johannesburg, Pretoria, Cape Town, and Durban with direct network access across all primary industrial nodes — Pomona, Kempton Park, Germiston, Centurion, Midrand, Airport Industria, Epping, Montague Gardens, Pinetown, Riverhorse Valley, and Dube TradePort. For secondary markets including Gqeberha, East London, Polokwane, and Rustenburg, we activate our extended partner network.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ STRATEGIC SITE AUDIT WIZARD ═══════════════════ -->
+<section id="audit">
+  <div class="container">
+    <div class="audit-inner">
+      <div class="audit-left">
+        <div class="eyebrow reveal">Private Client Services</div>
+        <h2 class="audit-h2 reveal delay-1">Commission a<br><em>Strategic Site Audit.</em></h2>
+        <p class="audit-body reveal delay-2">Our Site Audit is not a contact form — it's a professional consulting engagement. Complete your parameter specification and a senior industrial broker will deliver a curated, off-market report within 15 minutes of confirmation during business hours.</p>
+        <div class="audit-perks reveal delay-3">
+          <div class="audit-perk">
+            <div class="perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            Zero cost to tenant — landlord-paid commission structure
+          </div>
+          <div class="audit-perk">
+            <div class="perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            Senior broker response within 15 minutes during business hours
+          </div>
+          <div class="audit-perk">
+            <div class="perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            Off-market properties not available on any public portal
+          </div>
+          <div class="audit-perk">
+            <div class="perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            Technical specification verified — GLA, power, height, docks
+          </div>
+          <div class="audit-perk">
+            <div class="perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            100% confidential brief · NDA available on request
+          </div>
+          <div class="audit-perk">
+            <div class="perk-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            JHB · PTA · Cape Town · Durban — embedded teams in all nodes
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal delay-2">
+        <div class="audit-wizard">
+          <div class="wizard-top">
+            <div class="wizard-label">Strategic Site Audit — Parameter Specification</div>
+            <div class="wizard-progress" id="wizard-progress">
+              <div class="wizard-pip w-active" style="width:28px"></div>
+              <div class="wizard-pip w-upcoming" style="width:14px"></div>
+              <div class="wizard-pip w-upcoming" style="width:14px"></div>
+              <div class="wizard-pip w-upcoming" style="width:14px"></div>
+              <div class="wizard-pip w-upcoming" style="width:14px"></div>
+            </div>
+          </div>
+          <div class="wizard-body">
+            <!-- Step 1 -->
+            <div class="w-step active" id="ws-1">
+              <div class="w-step-eyebrow">Parameter 01 / 05 — Sector Classification</div>
+              <div class="w-step-q">What operational sector best describes your requirement?</div>
+              <div class="w-options">
+                <button class="w-opt" onclick="selectWOpt(this)">Logistics &amp; Distribution (3PL, Last-Mile, Fulfillment)</button>
+                <button class="w-opt" onclick="selectWOpt(this)">Manufacturing &amp; Production (Food, Auto, Industrial)</button>
+                <button class="w-opt" onclick="selectWOpt(this)">Warehousing &amp; Storage (Bulk, Cold Chain, FMCG)</button>
+                <button class="w-opt" onclick="selectWOpt(this)">Data Centre / Technical Infrastructure</button>
+                <button class="w-opt" onclick="selectWOpt(this)">Other / Hybrid Use</button>
+              </div>
+              <div class="w-nav">
+                <button class="w-next" onclick="nextWStep(1)">
+                  Proceed to GLA Specification
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="w-step" id="ws-2">
+              <div class="w-step-eyebrow">Parameter 02 / 05 — GLA Threshold</div>
+              <div class="w-step-q">What is your required Gross Leasable Area?</div>
+              <select class="w-select" id="ws-size">
+                <option value="">Select GLA range</option>
+                <option>Under 500m²</option>
+                <option>500 – 1,000m²</option>
+                <option>1,000 – 3,000m²</option>
+                <option>3,000 – 5,000m²</option>
+                <option>5,000 – 10,000m²</option>
+                <option>10,000 – 25,000m²</option>
+                <option>25,000m²+ (Build-to-Suit / Development)</option>
+              </select>
+              <div class="w-step-eyebrow" style="margin-top:0;margin-bottom:12px">Power Requirement (if known)</div>
+              <div class="w-options" style="margin-bottom:0">
+                <button class="w-opt" onclick="selectWOpt(this)">Standard — Under 200A (Light industrial)</button>
+                <button class="w-opt" onclick="selectWOpt(this)">Medium — 200A–500A (Mixed use / logistics)</button>
+                <button class="w-opt" onclick="selectWOpt(this)">Heavy — 500A–1000A (Manufacturing)</button>
+                <button class="w-opt" onclick="selectWOpt(this)">Critical — 1000A+ with backup (Mission-critical)</button>
+              </div>
+              <div class="w-nav" style="margin-top:20px">
+                <button class="w-back" onclick="prevWStep(2)">← Back</button>
+                <button class="w-next" onclick="nextWStep(2)">
+                  Proceed to Location
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="w-step" id="ws-3">
+              <div class="w-step-eyebrow">Parameter 03 / 05 — Geographic Mandate</div>
+              <div class="w-step-q">Which nodes should we activate?</div>
+              <div class="w-options">
+                <button class="w-opt" onclick="selectWOpt(this)">Gauteng (JHB / PTA / Midrand)</button>
+                <button class="w-opt" onclick="selectWOpt(this)">Western Cape (Cape Town metro)</button>
+                <button class="w-opt" onclick="selectWOpt(this)">KwaZulu-Natal (Durban / Pinetown)</button>
+                <button class="w-opt" onclick="selectWOpt(this)">Eastern Cape (Gqeberha / East London)</button>
+                <button class="w-opt" onclick="selectWOpt(this)">Multi-Province / National Rollout</button>
+              </div>
+              <div class="w-nav">
+                <button class="w-back" onclick="prevWStep(3)">← Back</button>
+                <button class="w-next" onclick="nextWStep(3)">
+                  Proceed to Technical Spec
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="w-step" id="ws-4">
+              <div class="w-step-eyebrow">Parameter 04 / 05 — Technical Specification</div>
+              <div class="w-step-q">Any critical technical requirements?</div>
+              <div class="w-options" style="margin-bottom:16px">
+                <button class="w-opt" onclick="selectWOpt(this)">Solar PV / Generator backup mandatory</button>
+                <button class="w-opt" onclick="selectWOpt(this)">Minimum 10m+ clear eave height required</button>
+                <button class="w-opt" onclick="selectWOpt(this)">High dock ratio (1:600m² or better)</button>
+                <button class="w-opt" onclick="selectWOpt(this)">Cold chain / temperature controlled</button>
+                <button class="w-opt" onclick="selectWOpt(this)">No specific technical requirements</button>
+              </div>
+              <div class="w-nav">
+                <button class="w-back" onclick="prevWStep(4)">← Back</button>
+                <button class="w-next" onclick="nextWStep(4)">
+                  Proceed to Contact Details
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="w-step" id="ws-5">
+              <div class="w-step-eyebrow">Parameter 05 / 05 — Authorisation Details</div>
+              <div class="w-step-q">Where should we deliver your off-market site audit?</div>
+              <div class="w-fields">
+                <div>
+                  <label class="w-label">Full Name</label>
+                  <input class="w-input" id="w-name" type="text" placeholder="Your name"/>
+                </div>
+                <div>
+                  <label class="w-label">Company / Organisation</label>
+                  <input class="w-input" id="w-company" type="text" placeholder="Company name"/>
+                </div>
+                <div>
+                  <label class="w-label">Direct Phone</label>
+                  <input class="w-input" id="w-phone" type="tel" placeholder="+27 ..."/>
+                </div>
+                <div>
+                  <label class="w-label">Business Email</label>
+                  <input class="w-input" id="w-email" type="email" placeholder="you@company.co.za"/>
+                </div>
+                <div class="w-field-full">
+                  <label class="w-label">Timeline &amp; Any Additional Requirements</label>
+                  <input class="w-input" id="w-timeline" type="text" placeholder="e.g. Operational within 60 days, lease term preference..."/>
+                </div>
+              </div>
+              <div class="w-nav">
+                <button class="w-back" onclick="prevWStep(5)">← Back</button>
+                <button class="w-next" onclick="submitWizard()" style="background:var(--gold)">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  Submit Site Audit Brief
+                </button>
+              </div>
+            </div>
+
+            <!-- Success -->
+            <div class="w-success" id="w-success">
+              <div class="success-emblem">
+                <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="success-t">Brief Commissioned.</div>
+              <p class="success-b">Your strategic site audit has been received. A senior industrial broker will contact you within <strong>15 minutes</strong> during business hours (Mon–Fri, 07:00–18:00 SAST).<br><br>Off-market matches — curated, verified, and exclusive — are incoming.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo" style="margin-bottom:0;text-decoration:none">
+    <img src="data:image/png;base64,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" alt="Warehouse Finder" style="height:40px;width:auto;display:block;" />
+  </a>
+        <p class="footer-tagline">South Africa's premier off-market industrial property concierge. We orchestrate supply chain success through private market access, technical data, and embedded national expertise.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Our Offices</div>
+        <div class="footer-offices">
+          <div><div class="office-city">Johannesburg</div><div class="office-addr">Sandton, Johannesburg, Gauteng, 2196</div></div>
+          <div><div class="office-city">Pretoria</div><div class="office-addr">Centurion, Pretoria, Gauteng, 0157</div></div>
+          <div><div class="office-city">Cape Town</div><div class="office-addr">Airport Industria, Cape Town, WC, 7490</div></div>
+          <div><div class="office-city">Durban</div><div class="office-addr">Riverhorse Valley, Durban, KZN, 4017</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <div class="footer-links">
+          <a href="#process">Site Selection Strategy</a>
+          <a href="#sectors">Sector Intelligence</a>
+          <a href="#nodes">Industrial Node Map</a>
+          <a href="#audit">Strategic Site Audit</a>
+          <a href="#faq">Market Intelligence</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <div class="footer-links">
+          <a href="tel:+27600457443">060 045 7443</a>
+          <a href="https://wa.me/27600457443" target="_blank" rel="noopener">WhatsApp Direct</a>
+          <a href="/cdn-cgi/l/email-protection#93fafdf5fcd3e4f2e1f6fbfce6e0f6f5fafdf7f6e1bdf0fcbde9f2"><span class="__cf_email__" data-cfemail="365f58505976415744535e59434553505f58525344185559184c57">[email&#160;protected]</span></a>
+        </div>
+        <div style="margin-top:24px">
+          <div class="footer-col-title">Legal</div>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">POPIA Compliance</a>
+            <a href="#">PAIA Manual</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Warehouse Finder (Pty) Ltd. All rights reserved. Registered in South Africa. FFC Compliant.</span>
+      <span>Industrial Property Concierge · SAPOA Member · RICS Standards</span>
+    </div>
+  </div>
+  <div class="nap-schema" aria-hidden="true">
+    Warehouse Finder | Industrial Property Brokers South Africa | Off-Market Warehouses | Tel: 060 045 7443 |
+    Sandton, Johannesburg, Gauteng | Centurion, Pretoria, Gauteng |
+    Airport Industria, Cape Town, Western Cape | Riverhorse Valley, Durban, KwaZulu-Natal |
+    www.warehousefinder.co.za
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<div class="wa-float">
+  <div class="wa-tip">Chat with an Industrial Broker</div>
+  <a class="wa-btn" href="https://wa.me/27600457443?text=Hi%2C%20I%27d%20like%20to%20commission%20a%20strategic%20site%20audit" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <div class="wa-dot"></div>
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<!-- Mobile Bar -->
+<div class="mobile-bar">
+  <div class="mobile-bar-inner">
+    <a href="tel:+27600457443" class="m-call">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+      Call Now
+    </a>
+    <a href="https://wa.me/27600457443" class="m-wa" target="_blank" rel="noopener">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+</div>
+
+<!-- Modal Audit Overlay (triggered from header CTA) -->
+<div id="audit-modal" style="display:none;position:fixed;inset:0;z-index:300;background:rgba(7,15,28,0.9);backdrop-filter:blur(16px);align-items:center;justify-content:center;padding:24px">
+  <div style="background:var(--chamber);border:1px solid var(--arch-line);border-radius:var(--r);max-width:560px;width:100%;max-height:90vh;overflow-y:auto;position:relative">
+    <button onclick="closeAudit()" style="position:absolute;top:16px;right:16px;width:32px;height:32px;background:var(--arch-dim);border:1px solid var(--arch-line);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:2">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--arch-gray)" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <!-- Modal shares same form — just scrolls to #audit on desktop -->
+    <div style="padding:40px">
+      <div style="font-size:9px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Strategic Site Audit</div>
+      <div style="font-family:var(--serif);font-size:24px;color:var(--white);margin-bottom:20px;line-height:1.2">Commission your brief below,<br>or scroll to the full wizard.</div>
+      <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:20px">
+        <input class="w-input" id="m-name" type="text" placeholder="Full Name"/>
+        <input class="w-input" id="m-company" type="text" placeholder="Company"/>
+        <input class="w-input" id="m-phone" type="tel" placeholder="Phone Number (+27 ...)"/>
+        <input class="w-input" id="m-email" type="email" placeholder="Business Email"/>
+        <input class="w-input" id="m-brief" type="text" placeholder="Brief description of your requirement"/>
+      </div>
+      <button onclick="submitModal()" class="w-next" style="width:100%">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        Submit Quick Brief
+      </button>
+      <div style="margin-top:12px;text-align:center;font-size:11px;color:var(--arch-mid)">
+        Or <a href="#audit" onclick="closeAudit()" style="color:var(--gold);text-decoration:none">use the full 5-step parameter wizard →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// ─── HEADER ───
+const hdr = document.getElementById('hdr');
+window.addEventListener('scroll', () => hdr.classList.toggle('scrolled', scrollY > 60), {passive:true});
+
+// ─── REVEAL ───
+const revEls = document.querySelectorAll('.reveal');
+const revObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('visible');revObs.unobserve(e.target)} });
+},{threshold:0.1});
+revEls.forEach(el => revObs.observe(el));
+// Hero immediate
+setTimeout(()=>document.querySelectorAll('#hero .reveal').forEach(el=>el.classList.add('visible')),100);
+
+// ─── FAQ ───
+function toggleFaq(el){
+  const item = el.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+  if(!isOpen) item.classList.add('open');
+}
+
+// ─── PARAM CARDS ───
+function activateParam(el){
+  document.querySelectorAll('.param-card').forEach(c=>c.classList.remove('active'));
+  el.classList.add('active');
+}
+
+// ─── GIS MAP ───
+let activeNode = 'jhb';
+function showNode(id){
+  document.querySelectorAll('.node-marker').forEach(m=>m.classList.remove('active'));
+  document.querySelector(`[data-node="${id}"]`).classList.add('active');
+  document.getElementById('sidebar-prompt').style.display='none';
+  document.querySelectorAll('.node-data-panel').forEach(p=>{p.classList.remove('active')});
+  document.getElementById('node-'+id).classList.add('active');
+  activeNode = id;
+}
+// Show JHB by default
+showNode('jhb');
+
+// ─── WIZARD ───
+let wStep = 1;
+const wTotal = 5;
+
+function updateProgress(step){
+  const pips = document.querySelectorAll('.wizard-pip');
+  pips.forEach((pip,i)=>{
+    pip.classList.remove('w-active','w-done','w-upcoming');
+    if(i === step-1) pip.classList.add('w-active');
+    else if(i < step-1) pip.classList.add('w-done');
+    else pip.classList.add('w-upcoming');
+    pip.style.width = i===step-1?'28px':'14px';
+  });
+}
+
+function nextWStep(step){
+  if(step < wTotal){
+    document.getElementById('ws-'+step).classList.remove('active');
+    document.getElementById('ws-'+(step+1)).classList.add('active');
+    wStep = step+1;
+    updateProgress(wStep);
+  }
+}
+function prevWStep(step){
+  if(step > 1){
+    document.getElementById('ws-'+step).classList.remove('active');
+    document.getElementById('ws-'+(step-1)).classList.add('active');
+    wStep = step-1;
+    updateProgress(wStep);
+  }
+}
+function selectWOpt(btn){
+  const siblings = btn.parentElement.querySelectorAll('.w-opt');
+  siblings.forEach(b=>b.classList.remove('selected'));
+  btn.classList.add('selected');
+}
+function collectWizardSelections(){
+  const selections = [];
+  document.querySelectorAll('.w-opt.selected').forEach(el => {
+    selections.push(el.textContent.trim());
+  });
+  const size = document.getElementById('ws-size');
+  if(size && size.value) selections.push('GLA: ' + size.value);
+  return selections.join(' | ');
+}
+
+function submitWizard(){
+  const name     = document.getElementById('w-name').value.trim()     || '(not provided)';
+  const company  = document.getElementById('w-company').value.trim()  || '(not provided)';
+  const phone    = document.getElementById('w-phone').value.trim()    || '(not provided)';
+  const email    = document.getElementById('w-email').value.trim()    || '(not provided)';
+  const timeline = document.getElementById('w-timeline').value.trim() || '(not provided)';
+  const params   = collectWizardSelections() || '(not provided)';
+
+  const subject = encodeURIComponent('Site Selection Brief — ' + company);
+  const body = encodeURIComponent(
+    'WAREHOUSE FINDER — STRATEGIC SITE SELECTION BRIEF\n' +
+    '═══════════════════════════════════════════\n\n' +
+    'Name:        ' + name + '\n' +
+    'Company:     ' + company + '\n' +
+    'Phone:       ' + phone + '\n' +
+    'Email:       ' + email + '\n' +
+    'Timeline:    ' + timeline + '\n\n' +
+    'Parameter Selections:\n' + params + '\n\n' +
+    '═══════════════════════════════════════════\n' +
+    'Submitted via warehousefinder.co.za'
+  );
+
+  window.location.href = 'mailto:info@warehousefinder.co.za?subject=' + subject + '&body=' + body;
+
+  document.getElementById('ws-5').classList.remove('active');
+  document.getElementById('w-success').classList.add('active');
+}
+
+function submitModal(){
+  const name    = document.getElementById('m-name').value.trim()    || '(not provided)';
+  const company = document.getElementById('m-company').value.trim() || '(not provided)';
+  const phone   = document.getElementById('m-phone').value.trim()   || '(not provided)';
+  const email   = document.getElementById('m-email').value.trim()   || '(not provided)';
+  const brief   = document.getElementById('m-brief').value.trim()   || '(not provided)';
+
+  const subject = encodeURIComponent('Quick Brief — ' + company);
+  const body = encodeURIComponent(
+    'WAREHOUSE FINDER — QUICK BRIEF\n' +
+    '═══════════════════════════════════════════\n\n' +
+    'Name:        ' + name + '\n' +
+    'Company:     ' + company + '\n' +
+    'Phone:       ' + phone + '\n' +
+    'Email:       ' + email + '\n' +
+    'Requirement: ' + brief + '\n\n' +
+    '═══════════════════════════════════════════\n' +
+    'Submitted via warehousefinder.co.za'
+  );
+
+  window.location.href = 'mailto:info@warehousefinder.co.za?subject=' + subject + '&body=' + body;
+  closeAudit();
+}
+
+// ─── MODAL ───
+function openAudit(){
+  const m = document.getElementById('audit-modal');
+  m.style.display='flex';
+  document.body.style.overflow='hidden';
+}
+function closeAudit(){
+  document.getElementById('audit-modal').style.display='none';
+  document.body.style.overflow='';
+}
+function scrollToAudit(){
+  document.getElementById('audit').scrollIntoView({behavior:'smooth'});
+}
+document.getElementById('audit-modal').addEventListener('click',e=>{
+  if(e.target===document.getElementById('audit-modal')) closeAudit();
+});
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeAudit(); });
+
+// ─── MOBILE NAV ───
+function toggleMobileNav(){
+  const nav = document.getElementById('mobile-nav');
+  const btn = document.getElementById('hamburger');
+  const isOpen = nav.classList.contains('open');
+  if(isOpen){
+    nav.classList.remove('open');
+    btn.classList.remove('open');
+    document.body.style.overflow='';
+  } else {
+    nav.classList.add('open');
+    btn.classList.add('open');
+    document.body.style.overflow='hidden';
+  }
+}
+function closeMobileNav(){
+  document.getElementById('mobile-nav').classList.remove('open');
+  document.getElementById('hamburger').classList.remove('open');
+  document.body.style.overflow='';
+}
+</script>
+</body>
+</html>
